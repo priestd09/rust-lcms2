@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["ColorSpaceSignature",""],["InfoType",""],["Intent",""],["PixelFormat",""],["ProfileClassSignature",""],["TagSignature",""]],"struct":[["Profile",""],["ToneCurve",""],["Transform",""]],"type":[["Context",""]]});

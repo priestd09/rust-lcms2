@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `PixelFormat` enum in crate `lcms2_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, PixelFormat">
+
+    <title>lcms2_sys::ffi::PixelFormat - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'PixelFormat', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a>::<wbr><a class='enum' href=''>PixelFormat</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1282' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#524-682' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum PixelFormat {
+    GRAY_8,
+    GRAY_8_REV,
+    GRAY_16,
+    GRAY_16_REV,
+    GRAY_16_SE,
+    GRAYA_8,
+    GRAYA_16,
+    GRAYA_16_SE,
+    GRAYA_8_PLANAR,
+    GRAYA_16_PLANAR,
+    RGB_8,
+    RGB_8_PLANAR,
+    BGR_8,
+    BGR_8_PLANAR,
+    RGB_16,
+    RGB_16_PLANAR,
+    RGB_16_SE,
+    BGR_16,
+    BGR_16_PLANAR,
+    BGR_16_SE,
+    RGBA_8,
+    RGBA_8_PLANAR,
+    RGBA_16,
+    RGBA_16_PLANAR,
+    RGBA_16_SE,
+    ARGB_8,
+    ARGB_8_PLANAR,
+    ARGB_16,
+    ABGR_8,
+    ABGR_8_PLANAR,
+    ABGR_16,
+    ABGR_16_PLANAR,
+    ABGR_16_SE,
+    BGRA_8,
+    BGRA_8_PLANAR,
+    BGRA_16,
+    BGRA_16_SE,
+    CMY_8,
+    CMY_8_PLANAR,
+    CMY_16,
+    CMY_16_PLANAR,
+    CMY_16_SE,
+    CMYK_8,
+    CMYKA_8,
+    CMYK_8_REV,
+    CMYK_8_PLANAR,
+    CMYK_16,
+    CMYK_16_REV,
+    CMYK_16_PLANAR,
+    CMYK_16_SE,
+    KYMC_8,
+    KYMC_16,
+    KYMC_16_SE,
+    KCMY_8,
+    KCMY_8_REV,
+    KCMY_16,
+    KCMY_16_REV,
+    KCMY_16_SE,
+    CMYK5_8,
+    CMYK5_16,
+    CMYK5_16_SE,
+    KYMC5_8,
+    KYMC5_16,
+    KYMC5_16_SE,
+    CMYK6_8,
+    CMYK6_8_PLANAR,
+    CMYK6_16,
+    CMYK6_16_PLANAR,
+    CMYK6_16_SE,
+    CMYK7_8,
+    CMYK7_16,
+    CMYK7_16_SE,
+    KYMC7_8,
+    KYMC7_16,
+    KYMC7_16_SE,
+    CMYK8_8,
+    CMYK8_16,
+    CMYK8_16_SE,
+    KYMC8_8,
+    KYMC8_16,
+    KYMC8_16_SE,
+    CMYK9_8,
+    CMYK9_16,
+    CMYK9_16_SE,
+    KYMC9_8,
+    KYMC9_16,
+    KYMC9_16_SE,
+    CMYK10_8,
+    CMYK10_16,
+    CMYK10_16_SE,
+    KYMC10_8,
+    KYMC10_16,
+    KYMC10_16_SE,
+    CMYK11_8,
+    CMYK11_16,
+    CMYK11_16_SE,
+    KYMC11_8,
+    KYMC11_16,
+    KYMC11_16_SE,
+    CMYK12_8,
+    CMYK12_16,
+    CMYK12_16_SE,
+    KYMC12_8,
+    KYMC12_16,
+    KYMC12_16_SE,
+    XYZ_16,
+    Lab_8,
+    LabV2_8,
+    ALab_8,
+    ALabV2_8,
+    Lab_16,
+    LabV2_16,
+    Yxy_16,
+    YCbCr_8,
+    YCbCr_8_PLANAR,
+    YCbCr_16,
+    YCbCr_16_PLANAR,
+    YCbCr_16_SE,
+    YUV_8,
+    YUV_8_PLANAR,
+    YUV_16,
+    YUV_16_PLANAR,
+    YUV_16_SE,
+    HLS_8,
+    HLS_8_PLANAR,
+    HLS_16,
+    HLS_16_PLANAR,
+    HLS_16_SE,
+    HSV_8,
+    HSV_8_PLANAR,
+    HSV_16,
+    HSV_16_PLANAR,
+    HSV_16_SE,
+    NAMED_COLOR_INDEX,
+    XYZ_FLT,
+    Lab_FLT,
+    LabA_FLT,
+    GRAY_FLT,
+    RGB_FLT,
+    RGBA_FLT,
+    ARGB_FLT,
+    BGR_FLT,
+    BGRA_FLT,
+    CMYK_FLT,
+    XYZ_DBL,
+    Lab_DBL,
+    GRAY_DBL,
+    RGB_DBL,
+    BGR_DBL,
+    CMYK_DBL,
+    GRAY_HALF_FLT,
+    RGB_HALF_FLT,
+    RGBA_HALF_FLT,
+    CMYK_HALF_FLT,
+    ARGB_HALF_FLT,
+    BGR_HALF_FLT,
+    BGRA_HALF_FLT,
+}</pre><h2 class='variants'>Variants</h2>
+<span id='variant.GRAY_8' class='variant'><code>GRAY_8</code></span><span id='variant.GRAY_8_REV' class='variant'><code>GRAY_8_REV</code></span><span id='variant.GRAY_16' class='variant'><code>GRAY_16</code></span><span id='variant.GRAY_16_REV' class='variant'><code>GRAY_16_REV</code></span><span id='variant.GRAY_16_SE' class='variant'><code>GRAY_16_SE</code></span><span id='variant.GRAYA_8' class='variant'><code>GRAYA_8</code></span><span id='variant.GRAYA_16' class='variant'><code>GRAYA_16</code></span><span id='variant.GRAYA_16_SE' class='variant'><code>GRAYA_16_SE</code></span><span id='variant.GRAYA_8_PLANAR' class='variant'><code>GRAYA_8_PLANAR</code></span><span id='variant.GRAYA_16_PLANAR' class='variant'><code>GRAYA_16_PLANAR</code></span><span id='variant.RGB_8' class='variant'><code>RGB_8</code></span><span id='variant.RGB_8_PLANAR' class='variant'><code>RGB_8_PLANAR</code></span><span id='variant.BGR_8' class='variant'><code>BGR_8</code></span><span id='variant.BGR_8_PLANAR' class='variant'><code>BGR_8_PLANAR</code></span><span id='variant.RGB_16' class='variant'><code>RGB_16</code></span><span id='variant.RGB_16_PLANAR' class='variant'><code>RGB_16_PLANAR</code></span><span id='variant.RGB_16_SE' class='variant'><code>RGB_16_SE</code></span><span id='variant.BGR_16' class='variant'><code>BGR_16</code></span><span id='variant.BGR_16_PLANAR' class='variant'><code>BGR_16_PLANAR</code></span><span id='variant.BGR_16_SE' class='variant'><code>BGR_16_SE</code></span><span id='variant.RGBA_8' class='variant'><code>RGBA_8</code></span><span id='variant.RGBA_8_PLANAR' class='variant'><code>RGBA_8_PLANAR</code></span><span id='variant.RGBA_16' class='variant'><code>RGBA_16</code></span><span id='variant.RGBA_16_PLANAR' class='variant'><code>RGBA_16_PLANAR</code></span><span id='variant.RGBA_16_SE' class='variant'><code>RGBA_16_SE</code></span><span id='variant.ARGB_8' class='variant'><code>ARGB_8</code></span><span id='variant.ARGB_8_PLANAR' class='variant'><code>ARGB_8_PLANAR</code></span><span id='variant.ARGB_16' class='variant'><code>ARGB_16</code></span><span id='variant.ABGR_8' class='variant'><code>ABGR_8</code></span><span id='variant.ABGR_8_PLANAR' class='variant'><code>ABGR_8_PLANAR</code></span><span id='variant.ABGR_16' class='variant'><code>ABGR_16</code></span><span id='variant.ABGR_16_PLANAR' class='variant'><code>ABGR_16_PLANAR</code></span><span id='variant.ABGR_16_SE' class='variant'><code>ABGR_16_SE</code></span><span id='variant.BGRA_8' class='variant'><code>BGRA_8</code></span><span id='variant.BGRA_8_PLANAR' class='variant'><code>BGRA_8_PLANAR</code></span><span id='variant.BGRA_16' class='variant'><code>BGRA_16</code></span><span id='variant.BGRA_16_SE' class='variant'><code>BGRA_16_SE</code></span><span id='variant.CMY_8' class='variant'><code>CMY_8</code></span><span id='variant.CMY_8_PLANAR' class='variant'><code>CMY_8_PLANAR</code></span><span id='variant.CMY_16' class='variant'><code>CMY_16</code></span><span id='variant.CMY_16_PLANAR' class='variant'><code>CMY_16_PLANAR</code></span><span id='variant.CMY_16_SE' class='variant'><code>CMY_16_SE</code></span><span id='variant.CMYK_8' class='variant'><code>CMYK_8</code></span><span id='variant.CMYKA_8' class='variant'><code>CMYKA_8</code></span><span id='variant.CMYK_8_REV' class='variant'><code>CMYK_8_REV</code></span><span id='variant.CMYK_8_PLANAR' class='variant'><code>CMYK_8_PLANAR</code></span><span id='variant.CMYK_16' class='variant'><code>CMYK_16</code></span><span id='variant.CMYK_16_REV' class='variant'><code>CMYK_16_REV</code></span><span id='variant.CMYK_16_PLANAR' class='variant'><code>CMYK_16_PLANAR</code></span><span id='variant.CMYK_16_SE' class='variant'><code>CMYK_16_SE</code></span><span id='variant.KYMC_8' class='variant'><code>KYMC_8</code></span><span id='variant.KYMC_16' class='variant'><code>KYMC_16</code></span><span id='variant.KYMC_16_SE' class='variant'><code>KYMC_16_SE</code></span><span id='variant.KCMY_8' class='variant'><code>KCMY_8</code></span><span id='variant.KCMY_8_REV' class='variant'><code>KCMY_8_REV</code></span><span id='variant.KCMY_16' class='variant'><code>KCMY_16</code></span><span id='variant.KCMY_16_REV' class='variant'><code>KCMY_16_REV</code></span><span id='variant.KCMY_16_SE' class='variant'><code>KCMY_16_SE</code></span><span id='variant.CMYK5_8' class='variant'><code>CMYK5_8</code></span><span id='variant.CMYK5_16' class='variant'><code>CMYK5_16</code></span><span id='variant.CMYK5_16_SE' class='variant'><code>CMYK5_16_SE</code></span><span id='variant.KYMC5_8' class='variant'><code>KYMC5_8</code></span><span id='variant.KYMC5_16' class='variant'><code>KYMC5_16</code></span><span id='variant.KYMC5_16_SE' class='variant'><code>KYMC5_16_SE</code></span><span id='variant.CMYK6_8' class='variant'><code>CMYK6_8</code></span><span id='variant.CMYK6_8_PLANAR' class='variant'><code>CMYK6_8_PLANAR</code></span><span id='variant.CMYK6_16' class='variant'><code>CMYK6_16</code></span><span id='variant.CMYK6_16_PLANAR' class='variant'><code>CMYK6_16_PLANAR</code></span><span id='variant.CMYK6_16_SE' class='variant'><code>CMYK6_16_SE</code></span><span id='variant.CMYK7_8' class='variant'><code>CMYK7_8</code></span><span id='variant.CMYK7_16' class='variant'><code>CMYK7_16</code></span><span id='variant.CMYK7_16_SE' class='variant'><code>CMYK7_16_SE</code></span><span id='variant.KYMC7_8' class='variant'><code>KYMC7_8</code></span><span id='variant.KYMC7_16' class='variant'><code>KYMC7_16</code></span><span id='variant.KYMC7_16_SE' class='variant'><code>KYMC7_16_SE</code></span><span id='variant.CMYK8_8' class='variant'><code>CMYK8_8</code></span><span id='variant.CMYK8_16' class='variant'><code>CMYK8_16</code></span><span id='variant.CMYK8_16_SE' class='variant'><code>CMYK8_16_SE</code></span><span id='variant.KYMC8_8' class='variant'><code>KYMC8_8</code></span><span id='variant.KYMC8_16' class='variant'><code>KYMC8_16</code></span><span id='variant.KYMC8_16_SE' class='variant'><code>KYMC8_16_SE</code></span><span id='variant.CMYK9_8' class='variant'><code>CMYK9_8</code></span><span id='variant.CMYK9_16' class='variant'><code>CMYK9_16</code></span><span id='variant.CMYK9_16_SE' class='variant'><code>CMYK9_16_SE</code></span><span id='variant.KYMC9_8' class='variant'><code>KYMC9_8</code></span><span id='variant.KYMC9_16' class='variant'><code>KYMC9_16</code></span><span id='variant.KYMC9_16_SE' class='variant'><code>KYMC9_16_SE</code></span><span id='variant.CMYK10_8' class='variant'><code>CMYK10_8</code></span><span id='variant.CMYK10_16' class='variant'><code>CMYK10_16</code></span><span id='variant.CMYK10_16_SE' class='variant'><code>CMYK10_16_SE</code></span><span id='variant.KYMC10_8' class='variant'><code>KYMC10_8</code></span><span id='variant.KYMC10_16' class='variant'><code>KYMC10_16</code></span><span id='variant.KYMC10_16_SE' class='variant'><code>KYMC10_16_SE</code></span><span id='variant.CMYK11_8' class='variant'><code>CMYK11_8</code></span><span id='variant.CMYK11_16' class='variant'><code>CMYK11_16</code></span><span id='variant.CMYK11_16_SE' class='variant'><code>CMYK11_16_SE</code></span><span id='variant.KYMC11_8' class='variant'><code>KYMC11_8</code></span><span id='variant.KYMC11_16' class='variant'><code>KYMC11_16</code></span><span id='variant.KYMC11_16_SE' class='variant'><code>KYMC11_16_SE</code></span><span id='variant.CMYK12_8' class='variant'><code>CMYK12_8</code></span><span id='variant.CMYK12_16' class='variant'><code>CMYK12_16</code></span><span id='variant.CMYK12_16_SE' class='variant'><code>CMYK12_16_SE</code></span><span id='variant.KYMC12_8' class='variant'><code>KYMC12_8</code></span><span id='variant.KYMC12_16' class='variant'><code>KYMC12_16</code></span><span id='variant.KYMC12_16_SE' class='variant'><code>KYMC12_16_SE</code></span><span id='variant.XYZ_16' class='variant'><code>XYZ_16</code></span><span id='variant.Lab_8' class='variant'><code>Lab_8</code></span><span id='variant.LabV2_8' class='variant'><code>LabV2_8</code></span><span id='variant.ALab_8' class='variant'><code>ALab_8</code></span><span id='variant.ALabV2_8' class='variant'><code>ALabV2_8</code></span><span id='variant.Lab_16' class='variant'><code>Lab_16</code></span><span id='variant.LabV2_16' class='variant'><code>LabV2_16</code></span><span id='variant.Yxy_16' class='variant'><code>Yxy_16</code></span><span id='variant.YCbCr_8' class='variant'><code>YCbCr_8</code></span><span id='variant.YCbCr_8_PLANAR' class='variant'><code>YCbCr_8_PLANAR</code></span><span id='variant.YCbCr_16' class='variant'><code>YCbCr_16</code></span><span id='variant.YCbCr_16_PLANAR' class='variant'><code>YCbCr_16_PLANAR</code></span><span id='variant.YCbCr_16_SE' class='variant'><code>YCbCr_16_SE</code></span><span id='variant.YUV_8' class='variant'><code>YUV_8</code></span><span id='variant.YUV_8_PLANAR' class='variant'><code>YUV_8_PLANAR</code></span><span id='variant.YUV_16' class='variant'><code>YUV_16</code></span><span id='variant.YUV_16_PLANAR' class='variant'><code>YUV_16_PLANAR</code></span><span id='variant.YUV_16_SE' class='variant'><code>YUV_16_SE</code></span><span id='variant.HLS_8' class='variant'><code>HLS_8</code></span><span id='variant.HLS_8_PLANAR' class='variant'><code>HLS_8_PLANAR</code></span><span id='variant.HLS_16' class='variant'><code>HLS_16</code></span><span id='variant.HLS_16_PLANAR' class='variant'><code>HLS_16_PLANAR</code></span><span id='variant.HLS_16_SE' class='variant'><code>HLS_16_SE</code></span><span id='variant.HSV_8' class='variant'><code>HSV_8</code></span><span id='variant.HSV_8_PLANAR' class='variant'><code>HSV_8_PLANAR</code></span><span id='variant.HSV_16' class='variant'><code>HSV_16</code></span><span id='variant.HSV_16_PLANAR' class='variant'><code>HSV_16_PLANAR</code></span><span id='variant.HSV_16_SE' class='variant'><code>HSV_16_SE</code></span><span id='variant.NAMED_COLOR_INDEX' class='variant'><code>NAMED_COLOR_INDEX</code></span><span id='variant.XYZ_FLT' class='variant'><code>XYZ_FLT</code></span><span id='variant.Lab_FLT' class='variant'><code>Lab_FLT</code></span><span id='variant.LabA_FLT' class='variant'><code>LabA_FLT</code></span><span id='variant.GRAY_FLT' class='variant'><code>GRAY_FLT</code></span><span id='variant.RGB_FLT' class='variant'><code>RGB_FLT</code></span><span id='variant.RGBA_FLT' class='variant'><code>RGBA_FLT</code></span><span id='variant.ARGB_FLT' class='variant'><code>ARGB_FLT</code></span><span id='variant.BGR_FLT' class='variant'><code>BGR_FLT</code></span><span id='variant.BGRA_FLT' class='variant'><code>BGRA_FLT</code></span><span id='variant.CMYK_FLT' class='variant'><code>CMYK_FLT</code></span><span id='variant.XYZ_DBL' class='variant'><code>XYZ_DBL</code></span><span id='variant.Lab_DBL' class='variant'><code>Lab_DBL</code></span><span id='variant.GRAY_DBL' class='variant'><code>GRAY_DBL</code></span><span id='variant.RGB_DBL' class='variant'><code>RGB_DBL</code></span><span id='variant.BGR_DBL' class='variant'><code>BGR_DBL</code></span><span id='variant.CMYK_DBL' class='variant'><code>CMYK_DBL</code></span><span id='variant.GRAY_HALF_FLT' class='variant'><code>GRAY_HALF_FLT</code></span><span id='variant.RGB_HALF_FLT' class='variant'><code>RGB_HALF_FLT</code></span><span id='variant.RGBA_HALF_FLT' class='variant'><code>RGBA_HALF_FLT</code></span><span id='variant.CMYK_HALF_FLT' class='variant'><code>CMYK_HALF_FLT</code></span><span id='variant.ARGB_HALF_FLT' class='variant'><code>ARGB_HALF_FLT</code></span><span id='variant.BGR_HALF_FLT' class='variant'><code>BGR_HALF_FLT</code></span><span id='variant.BGRA_HALF_FLT' class='variant'><code>BGRA_HALF_FLT</code></span><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../lcms2_sys/ffi/enum.PixelFormat.html' title='lcms2_sys::ffi::PixelFormat'>PixelFormat</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1597' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#684-722' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.float' class='method'><code>fn <a href='#method.float' class='fnname'>float</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.optimized' class='method'><code>fn <a href='#method.optimized' class='fnname'>optimized</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.colorspace' class='method'><code>fn <a href='#method.colorspace' class='fnname'>colorspace</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.swapfirst' class='method'><code>fn <a href='#method.swapfirst' class='fnname'>swapfirst</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.flavor' class='method'><code>fn <a href='#method.flavor' class='fnname'>flavor</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.planar' class='method'><code>fn <a href='#method.planar' class='fnname'>planar</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.endian16' class='method'><code>fn <a href='#method.endian16' class='fnname'>endian16</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.doswap' class='method'><code>fn <a href='#method.doswap' class='fnname'>doswap</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.extra' class='method'><code>fn <a href='#method.extra' class='fnname'>extra</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.channels' class='method'><code>fn <a href='#method.channels' class='fnname'>channels</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.bytes_per_channel' class='method'><code>fn <a href='#method.bytes_per_channel' class='fnname'>bytes_per_channel</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+<h4 id='method.bytes_per_pixel' class='method'><code>fn <a href='#method.bytes_per_pixel' class='fnname'>bytes_per_pixel</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.PixelFormat.html' title='lcms2_sys::ffi::PixelFormat'>PixelFormat</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1108' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#521' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.PixelFormat.html' title='lcms2_sys::ffi::PixelFormat'>PixelFormat</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1111' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#521' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../lcms2_sys/ffi/enum.PixelFormat.html' title='lcms2_sys::ffi::PixelFormat'>PixelFormat</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.PixelFormat.html' title='lcms2_sys::ffi::PixelFormat'>PixelFormat</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1117' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#521' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../lcms2_sys/ffi/enum.PixelFormat.html' title='lcms2_sys::ffi::PixelFormat'>PixelFormat</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.PixelFormat.html' title='lcms2_sys::ffi::PixelFormat'>PixelFormat</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1120' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#521' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.PixelFormat.html' title='lcms2_sys::ffi::PixelFormat'>PixelFormat</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1121' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#523' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "lcms2_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
