@@ -270,6 +270,11 @@
 <span id="226">226</span>
 <span id="227">227</span>
 <span id="228">228</span>
+<span id="229">229</span>
+<span id="230">230</span>
+<span id="231">231</span>
+<span id="232">232</span>
+<span id="233">233</span>
 </pre><pre class='rust '>
 <span class='kw'>use</span> <span class='kw'>super</span>::<span class='op'>*</span>;
 
@@ -281,61 +286,60 @@
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
 
 <span class='kw'>impl</span> <span class='ident'>Profile</span> {
-    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_icc</span>(<span class='ident'>data</span>: <span class='kw-2'>&amp;</span>[<span class='ident'>u8</span>]) <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
-        <span class='ident'>Profile</span> {
-            <span class='ident'>handle</span>: <span class='kw'>unsafe</span> {
-                <span class='ident'>ffi</span>::<span class='ident'>cmsOpenProfileFromMem</span>(<span class='ident'>data</span>.<span class='ident'>as_ptr</span>() <span class='kw'>as</span> <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>data</span>.<span class='ident'>len</span>() <span class='kw'>as</span> <span class='ident'>u32</span>)
-            },
-        }
+    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_icc</span>(<span class='ident'>data</span>: <span class='kw-2'>&amp;</span>[<span class='ident'>u8</span>]) <span class='op'>-&gt;</span> <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Profile</span><span class='op'>&gt;</span> {
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> {
+            <span class='ident'>ffi</span>::<span class='ident'>cmsOpenProfileFromMem</span>(<span class='ident'>data</span>.<span class='ident'>as_ptr</span>() <span class='kw'>as</span> <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>data</span>.<span class='ident'>len</span>() <span class='kw'>as</span> <span class='ident'>u32</span>)
+        })
     }
 
     <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_srgb</span>() <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
-        <span class='ident'>Profile</span> { <span class='ident'>handle</span>: <span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreate_sRGBProfile</span>() } }
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreate_sRGBProfile</span>() }).<span class='ident'>unwrap</span>()
     }
 
-    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_rgb</span>(<span class='ident'>white_point</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyY</span>, <span class='ident'>primaries</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyYTRIPLE</span>, <span class='ident'>transfer_function</span>: <span class='kw-2'>&amp;</span>[<span class='kw-2'>&amp;</span><span class='ident'>ToneCurve</span>]) <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
+    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_rgb</span>(<span class='ident'>white_point</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyY</span>,
+                   <span class='ident'>primaries</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyYTRIPLE</span>,
+                   <span class='ident'>transfer_function</span>: <span class='kw-2'>&amp;</span>[<span class='kw-2'>&amp;</span><span class='ident'>ToneCurve</span>])
+                   <span class='op'>-&gt;</span> <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Profile</span><span class='op'>&gt;</span> {
         <span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='number'>3</span>, <span class='ident'>transfer_function</span>.<span class='ident'>len</span>());
-        <span class='ident'>Profile</span> {
-            <span class='ident'>handle</span>: <span class='kw'>unsafe</span> {
-                <span class='ident'>ffi</span>::<span class='ident'>cmsCreateRGBProfile</span>(<span class='ident'>white_point</span>, <span class='ident'>primaries</span>, [
-                    <span class='ident'>transfer_function</span>[<span class='number'>0</span>].<span class='ident'>handle</span> <span class='kw'>as</span> <span class='op'>*</span><span class='kw'>const</span> _,
-                    <span class='ident'>transfer_function</span>[<span class='number'>1</span>].<span class='ident'>handle</span> <span class='kw'>as</span> <span class='op'>*</span><span class='kw'>const</span> _,
-                    <span class='ident'>transfer_function</span>[<span class='number'>2</span>].<span class='ident'>handle</span> <span class='kw'>as</span> <span class='op'>*</span><span class='kw'>const</span> _,
-                ].<span class='ident'>as_ptr</span>())
-            }
-        }
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> {
+            <span class='ident'>ffi</span>::<span class='ident'>cmsCreateRGBProfile</span>(<span class='ident'>white_point</span>,
+                                     <span class='ident'>primaries</span>,
+                                     [<span class='ident'>transfer_function</span>[<span class='number'>0</span>].<span class='ident'>handle</span> <span class='kw'>as</span> <span class='op'>*</span><span class='kw'>const</span> _,
+                                      <span class='ident'>transfer_function</span>[<span class='number'>1</span>].<span class='ident'>handle</span> <span class='kw'>as</span> <span class='op'>*</span><span class='kw'>const</span> _,
+                                      <span class='ident'>transfer_function</span>[<span class='number'>2</span>].<span class='ident'>handle</span> <span class='kw'>as</span> <span class='op'>*</span><span class='kw'>const</span> _]
+                                         .<span class='ident'>as_ptr</span>())
+        })
     }
 
-    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_gray</span>(<span class='ident'>white_point</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyY</span>, <span class='ident'>curve</span>: <span class='kw-2'>&amp;</span><span class='ident'>ToneCurve</span>) <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
-        <span class='ident'>Profile</span> {
-            <span class='ident'>handle</span>: <span class='kw'>unsafe</span> {
-                <span class='ident'>ffi</span>::<span class='ident'>cmsCreateGrayProfile</span>(<span class='ident'>white_point</span>, <span class='ident'>curve</span>.<span class='ident'>handle</span>)
-            }
-        }
+    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_gray</span>(<span class='ident'>white_point</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyY</span>, <span class='ident'>curve</span>: <span class='kw-2'>&amp;</span><span class='ident'>ToneCurve</span>) <span class='op'>-&gt;</span> <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Profile</span><span class='op'>&gt;</span> {
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateGrayProfile</span>(<span class='ident'>white_point</span>, <span class='ident'>curve</span>.<span class='ident'>handle</span>) })
     }
 
     <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_xyz</span>() <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
-        <span class='ident'>Profile</span> { <span class='ident'>handle</span>: <span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateXYZProfile</span>() } }
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateXYZProfile</span>() }).<span class='ident'>unwrap</span>()
     }
 
     <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_null</span>() <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
-        <span class='ident'>Profile</span> { <span class='ident'>handle</span>: <span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateNULLProfile</span>() } }
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateNULLProfile</span>() }).<span class='ident'>unwrap</span>()
     }
 
-    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_lab2</span>(<span class='ident'>white_point</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyY</span>) <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
-        <span class='ident'>Profile</span> { <span class='ident'>handle</span>: <span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateLab2Profile</span>(<span class='ident'>white_point</span>) } }
+    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_lab2</span>(<span class='ident'>white_point</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyY</span>) <span class='op'>-&gt;</span> <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Profile</span><span class='op'>&gt;</span> {
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateLab2Profile</span>(<span class='ident'>white_point</span>) })
     }
 
-    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_lab4</span>(<span class='ident'>white_point</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyY</span>) <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
-        <span class='ident'>Profile</span> { <span class='ident'>handle</span>: <span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateLab4Profile</span>(<span class='ident'>white_point</span>) } }
+    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_lab4</span>(<span class='ident'>white_point</span>: <span class='kw-2'>&amp;</span><span class='ident'>CIExyY</span>) <span class='op'>-&gt;</span> <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Profile</span><span class='op'>&gt;</span> {
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsCreateLab4Profile</span>(<span class='ident'>white_point</span>) })
     }
 
-    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_device_link</span><span class='op'>&lt;</span><span class='ident'>F</span>,<span class='ident'>T</span><span class='op'>&gt;</span>(<span class='ident'>transform</span>: <span class='kw-2'>&amp;</span><span class='ident'>Transform</span><span class='op'>&lt;</span><span class='ident'>F</span>,<span class='ident'>T</span><span class='op'>&gt;</span>, <span class='ident'>version</span>: <span class='ident'>f64</span>, <span class='ident'>flags</span>: <span class='ident'>u32</span>) <span class='op'>-&gt;</span> <span class='ident'>Profile</span> {
-        <span class='ident'>Profile</span> {
-            <span class='ident'>handle</span>: <span class='kw'>unsafe</span> {
-                <span class='ident'>ffi</span>::<span class='ident'>cmsTransform2DeviceLink</span>(<span class='ident'>transform</span>.<span class='ident'>handle</span>, <span class='ident'>version</span>, <span class='ident'>flags</span>)
-            },
+    <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>new_device_link</span><span class='op'>&lt;</span><span class='ident'>F</span>, <span class='ident'>T</span><span class='op'>&gt;</span>(<span class='ident'>transform</span>: <span class='kw-2'>&amp;</span><span class='ident'>Transform</span><span class='op'>&lt;</span><span class='ident'>F</span>, <span class='ident'>T</span><span class='op'>&gt;</span>, <span class='ident'>version</span>: <span class='ident'>f64</span>, <span class='ident'>flags</span>: <span class='ident'>u32</span>) <span class='op'>-&gt;</span> <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Profile</span><span class='op'>&gt;</span> {
+        <span class='self'>Self</span>::<span class='ident'>new_handle</span>(<span class='kw'>unsafe</span> { <span class='ident'>ffi</span>::<span class='ident'>cmsTransform2DeviceLink</span>(<span class='ident'>transform</span>.<span class='ident'>handle</span>, <span class='ident'>version</span>, <span class='ident'>flags</span>) })
+    }
+
+    <span class='kw'>fn</span> <span class='ident'>new_handle</span>(<span class='ident'>handle</span>: <span class='ident'>ffi</span>::<span class='ident'>HPROFILE</span>) <span class='op'>-&gt;</span> <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Profile</span><span class='op'>&gt;</span> {
+        <span class='kw'>if</span> <span class='ident'>handle</span>.<span class='ident'>is_null</span>() {
+            <span class='kw'>return</span> <span class='prelude-val'>None</span>;
         }
+        <span class='prelude-val'>Some</span>(<span class='ident'>Profile</span> { <span class='ident'>handle</span>: <span class='ident'>handle</span> })
     }
 
     <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>icc</span>(<span class='kw-2'>&amp;</span><span class='self'>self</span>) <span class='op'>-&gt;</span> <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>Vec</span><span class='op'>&lt;</span><span class='ident'>u8</span><span class='op'>&gt;&gt;</span> {
@@ -498,6 +502,12 @@
 <span class='kw'>fn</span> <span class='ident'>icc</span>() {
     <span class='kw'>let</span> <span class='ident'>prof</span> <span class='op'>=</span> <span class='ident'>Profile</span>::<span class='ident'>new_xyz</span>();
     <span class='macro'>assert</span><span class='macro'>!</span>(<span class='ident'>prof</span>.<span class='ident'>icc</span>().<span class='ident'>unwrap</span>().<span class='ident'>len</span>() <span class='op'>&gt;</span> <span class='number'>300</span>);
+}
+
+<span class='attribute'>#[<span class='ident'>test</span>]</span>
+<span class='kw'>fn</span> <span class='ident'>bad_icc</span>() {
+    <span class='kw'>let</span> <span class='ident'>err</span> <span class='op'>=</span> <span class='ident'>Profile</span>::<span class='ident'>new_icc</span>(<span class='kw-2'>&amp;</span>[<span class='number'>1</span>,<span class='number'>2</span>,<span class='number'>3</span>]);
+    <span class='macro'>assert</span><span class='macro'>!</span>(<span class='ident'>err</span>.<span class='ident'>is_none</span>());
 }
 </pre>
 </section>
