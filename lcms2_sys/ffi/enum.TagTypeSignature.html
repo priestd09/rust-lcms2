@@ -9,6 +9,7 @@
 
     <title>lcms2_sys::ffi::TagTypeSignature - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc enum">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'TagTypeSignature', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Enum TagTypeSignature</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'TagTypeSignature', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,64 +43,106 @@
         </form>
     </nav>
 
-    <section id='main' class="content enum">
-<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a>::<wbr><a class='enum' href=''>TagTypeSignature</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a>::<wbr><a class="enum" href=''>TagTypeSignature</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-123' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#54-91' title='goto source code'>[src]</a></span></h1>
-<pre class='rust enum'>pub enum TagTypeSignature {
-    SigChromaticityType,
-    SigColorantOrderType,
-    SigColorantTableType,
-    SigCrdInfoType,
-    SigCurveType,
-    SigDataType,
-    SigDictType,
-    SigDateTimeType,
-    SigDeviceSettingsType,
-    SigLut16Type,
-    SigLut8Type,
-    SigLutAtoBType,
-    SigLutBtoAType,
-    SigMeasurementType,
-    SigMultiLocalizedUnicodeType,
-    SigMultiProcessElementType,
-    SigNamedColorType,
-    SigNamedColor2Type,
-    SigParametricCurveType,
-    SigProfileSequenceDescType,
-    SigProfileSequenceIdType,
-    SigResponseCurveSet16Type,
-    SigS15Fixed16ArrayType,
-    SigScreeningType,
-    SigSignatureType,
-    SigTextType,
-    SigTextDescriptionType,
-    SigU16Fixed16ArrayType,
-    SigUcrBgType,
-    SigUInt16ArrayType,
-    SigUInt32ArrayType,
-    SigUInt64ArrayType,
-    SigUInt8ArrayType,
-    SigVcgtType,
-    SigViewingConditionsType,
-    SigXYZType,
-}</pre><h2 class='variants'>Variants</h2>
-<span id='variant.SigChromaticityType' class='variant'><code>SigChromaticityType</code></span><span id='variant.SigColorantOrderType' class='variant'><code>SigColorantOrderType</code></span><span id='variant.SigColorantTableType' class='variant'><code>SigColorantTableType</code></span><span id='variant.SigCrdInfoType' class='variant'><code>SigCrdInfoType</code></span><span id='variant.SigCurveType' class='variant'><code>SigCurveType</code></span><span id='variant.SigDataType' class='variant'><code>SigDataType</code></span><span id='variant.SigDictType' class='variant'><code>SigDictType</code></span><span id='variant.SigDateTimeType' class='variant'><code>SigDateTimeType</code></span><span id='variant.SigDeviceSettingsType' class='variant'><code>SigDeviceSettingsType</code></span><span id='variant.SigLut16Type' class='variant'><code>SigLut16Type</code></span><span id='variant.SigLut8Type' class='variant'><code>SigLut8Type</code></span><span id='variant.SigLutAtoBType' class='variant'><code>SigLutAtoBType</code></span><span id='variant.SigLutBtoAType' class='variant'><code>SigLutBtoAType</code></span><span id='variant.SigMeasurementType' class='variant'><code>SigMeasurementType</code></span><span id='variant.SigMultiLocalizedUnicodeType' class='variant'><code>SigMultiLocalizedUnicodeType</code></span><span id='variant.SigMultiProcessElementType' class='variant'><code>SigMultiProcessElementType</code></span><span id='variant.SigNamedColorType' class='variant'><code>SigNamedColorType</code></span><span id='variant.SigNamedColor2Type' class='variant'><code>SigNamedColor2Type</code></span><span id='variant.SigParametricCurveType' class='variant'><code>SigParametricCurveType</code></span><span id='variant.SigProfileSequenceDescType' class='variant'><code>SigProfileSequenceDescType</code></span><span id='variant.SigProfileSequenceIdType' class='variant'><code>SigProfileSequenceIdType</code></span><span id='variant.SigResponseCurveSet16Type' class='variant'><code>SigResponseCurveSet16Type</code></span><span id='variant.SigS15Fixed16ArrayType' class='variant'><code>SigS15Fixed16ArrayType</code></span><span id='variant.SigScreeningType' class='variant'><code>SigScreeningType</code></span><span id='variant.SigSignatureType' class='variant'><code>SigSignatureType</code></span><span id='variant.SigTextType' class='variant'><code>SigTextType</code></span><span id='variant.SigTextDescriptionType' class='variant'><code>SigTextDescriptionType</code></span><span id='variant.SigU16Fixed16ArrayType' class='variant'><code>SigU16Fixed16ArrayType</code></span><span id='variant.SigUcrBgType' class='variant'><code>SigUcrBgType</code></span><span id='variant.SigUInt16ArrayType' class='variant'><code>SigUInt16ArrayType</code></span><span id='variant.SigUInt32ArrayType' class='variant'><code>SigUInt32ArrayType</code></span><span id='variant.SigUInt64ArrayType' class='variant'><code>SigUInt64ArrayType</code></span><span id='variant.SigUInt8ArrayType' class='variant'><code>SigUInt8ArrayType</code></span><span id='variant.SigVcgtType' class='variant'><code>SigVcgtType</code></span><span id='variant.SigViewingConditionsType' class='variant'><code>SigViewingConditionsType</code></span><span id='variant.SigXYZType' class='variant'><code>SigXYZType</code></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagTypeSignature.html' title='lcms2_sys::ffi::TagTypeSignature'>TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-70' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#51' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagTypeSignature.html' title='lcms2_sys::ffi::TagTypeSignature'>TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-73' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#51' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../lcms2_sys/ffi/enum.TagTypeSignature.html' title='lcms2_sys::ffi::TagTypeSignature'>TagTypeSignature</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
-</div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
-<div class='docblock'><p>This method tests for <code>!=</code>.</p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagTypeSignature.html' title='lcms2_sys::ffi::TagTypeSignature'>TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-79' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#51' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../lcms2_sys/ffi/enum.TagTypeSignature.html' title='lcms2_sys::ffi::TagTypeSignature'>TagTypeSignature</a></code></h4>
+               </span><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#64-137' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum TagTypeSignature {
+    ChromaticityType,
+    ColorantOrderType,
+    ColorantTableType,
+    CrdInfoType,
+    CurveType,
+    DataType,
+    DictType,
+    DateTimeType,
+    DeviceSettingsType,
+    Lut16Type,
+    Lut8Type,
+    LutAtoBType,
+    LutBtoAType,
+    MeasurementType,
+    MultiLocalizedUnicodeType,
+    MultiProcessElementType,
+    NamedColorType,
+    NamedColor2Type,
+    ParametricCurveType,
+    ProfileSequenceDescType,
+    ProfileSequenceIdType,
+    ResponseCurveSet16Type,
+    S15Fixed16ArrayType,
+    ScreeningType,
+    SignatureType,
+    TextType,
+    TextDescriptionType,
+    U16Fixed16ArrayType,
+    UcrBgType,
+    UInt16ArrayType,
+    UInt32ArrayType,
+    UInt64ArrayType,
+    UInt8ArrayType,
+    VcgtType,
+    ViewingConditionsType,
+    XYZType,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.ChromaticityType' class='variant'><span id='ChromaticityType.v' class='invisible'><code>ChromaticityType</code></span></span><div class='docblock'><p>&#39;chrm&#39;</p>
+</div><span id='variant.ColorantOrderType' class='variant'><span id='ColorantOrderType.v' class='invisible'><code>ColorantOrderType</code></span></span><div class='docblock'><p>&#39;clro&#39;</p>
+</div><span id='variant.ColorantTableType' class='variant'><span id='ColorantTableType.v' class='invisible'><code>ColorantTableType</code></span></span><div class='docblock'><p>&#39;clrt&#39;</p>
+</div><span id='variant.CrdInfoType' class='variant'><span id='CrdInfoType.v' class='invisible'><code>CrdInfoType</code></span></span><div class='docblock'><p>&#39;crdi&#39;</p>
+</div><span id='variant.CurveType' class='variant'><span id='CurveType.v' class='invisible'><code>CurveType</code></span></span><div class='docblock'><p>&#39;curv&#39;</p>
+</div><span id='variant.DataType' class='variant'><span id='DataType.v' class='invisible'><code>DataType</code></span></span><div class='docblock'><p>&#39;data&#39;</p>
+</div><span id='variant.DictType' class='variant'><span id='DictType.v' class='invisible'><code>DictType</code></span></span><div class='docblock'><p>&#39;dict&#39;</p>
+</div><span id='variant.DateTimeType' class='variant'><span id='DateTimeType.v' class='invisible'><code>DateTimeType</code></span></span><div class='docblock'><p>&#39;dtim&#39;</p>
+</div><span id='variant.DeviceSettingsType' class='variant'><span id='DeviceSettingsType.v' class='invisible'><code>DeviceSettingsType</code></span></span><div class='docblock'><p>&#39;devs&#39;</p>
+</div><span id='variant.Lut16Type' class='variant'><span id='Lut16Type.v' class='invisible'><code>Lut16Type</code></span></span><div class='docblock'><p>&#39;mft2&#39;</p>
+</div><span id='variant.Lut8Type' class='variant'><span id='Lut8Type.v' class='invisible'><code>Lut8Type</code></span></span><div class='docblock'><p>&#39;mft1&#39;</p>
+</div><span id='variant.LutAtoBType' class='variant'><span id='LutAtoBType.v' class='invisible'><code>LutAtoBType</code></span></span><div class='docblock'><p>&#39;mAB &#39;</p>
+</div><span id='variant.LutBtoAType' class='variant'><span id='LutBtoAType.v' class='invisible'><code>LutBtoAType</code></span></span><div class='docblock'><p>&#39;mBA &#39;</p>
+</div><span id='variant.MeasurementType' class='variant'><span id='MeasurementType.v' class='invisible'><code>MeasurementType</code></span></span><div class='docblock'><p>&#39;meas&#39;</p>
+</div><span id='variant.MultiLocalizedUnicodeType' class='variant'><span id='MultiLocalizedUnicodeType.v' class='invisible'><code>MultiLocalizedUnicodeType</code></span></span><div class='docblock'><p>&#39;mluc&#39;</p>
+</div><span id='variant.MultiProcessElementType' class='variant'><span id='MultiProcessElementType.v' class='invisible'><code>MultiProcessElementType</code></span></span><div class='docblock'><p>&#39;mpet&#39;</p>
+</div><span id='variant.NamedColorType' class='variant'><span id='NamedColorType.v' class='invisible'><code>NamedColorType</code></span></span><div class='docblock'><p>&#39;ncol&#39; -- DEPRECATED!</p>
+</div><span id='variant.NamedColor2Type' class='variant'><span id='NamedColor2Type.v' class='invisible'><code>NamedColor2Type</code></span></span><div class='docblock'><p>&#39;ncl2&#39;</p>
+</div><span id='variant.ParametricCurveType' class='variant'><span id='ParametricCurveType.v' class='invisible'><code>ParametricCurveType</code></span></span><div class='docblock'><p>&#39;para&#39;</p>
+</div><span id='variant.ProfileSequenceDescType' class='variant'><span id='ProfileSequenceDescType.v' class='invisible'><code>ProfileSequenceDescType</code></span></span><div class='docblock'><p>&#39;pseq&#39;</p>
+</div><span id='variant.ProfileSequenceIdType' class='variant'><span id='ProfileSequenceIdType.v' class='invisible'><code>ProfileSequenceIdType</code></span></span><div class='docblock'><p>&#39;psid&#39;</p>
+</div><span id='variant.ResponseCurveSet16Type' class='variant'><span id='ResponseCurveSet16Type.v' class='invisible'><code>ResponseCurveSet16Type</code></span></span><div class='docblock'><p>&#39;rcs2&#39;</p>
+</div><span id='variant.S15Fixed16ArrayType' class='variant'><span id='S15Fixed16ArrayType.v' class='invisible'><code>S15Fixed16ArrayType</code></span></span><div class='docblock'><p>&#39;sf32&#39;</p>
+</div><span id='variant.ScreeningType' class='variant'><span id='ScreeningType.v' class='invisible'><code>ScreeningType</code></span></span><div class='docblock'><p>&#39;scrn&#39;</p>
+</div><span id='variant.SignatureType' class='variant'><span id='SignatureType.v' class='invisible'><code>SignatureType</code></span></span><div class='docblock'><p>&#39;sig &#39;</p>
+</div><span id='variant.TextType' class='variant'><span id='TextType.v' class='invisible'><code>TextType</code></span></span><div class='docblock'><p>&#39;text&#39;</p>
+</div><span id='variant.TextDescriptionType' class='variant'><span id='TextDescriptionType.v' class='invisible'><code>TextDescriptionType</code></span></span><div class='docblock'><p>&#39;desc&#39;</p>
+</div><span id='variant.U16Fixed16ArrayType' class='variant'><span id='U16Fixed16ArrayType.v' class='invisible'><code>U16Fixed16ArrayType</code></span></span><div class='docblock'><p>&#39;uf32&#39;</p>
+</div><span id='variant.UcrBgType' class='variant'><span id='UcrBgType.v' class='invisible'><code>UcrBgType</code></span></span><div class='docblock'><p>&#39;bfd &#39;</p>
+</div><span id='variant.UInt16ArrayType' class='variant'><span id='UInt16ArrayType.v' class='invisible'><code>UInt16ArrayType</code></span></span><div class='docblock'><p>&#39;ui16&#39;</p>
+</div><span id='variant.UInt32ArrayType' class='variant'><span id='UInt32ArrayType.v' class='invisible'><code>UInt32ArrayType</code></span></span><div class='docblock'><p>&#39;ui32&#39;</p>
+</div><span id='variant.UInt64ArrayType' class='variant'><span id='UInt64ArrayType.v' class='invisible'><code>UInt64ArrayType</code></span></span><div class='docblock'><p>&#39;ui64&#39;</p>
+</div><span id='variant.UInt8ArrayType' class='variant'><span id='UInt8ArrayType.v' class='invisible'><code>UInt8ArrayType</code></span></span><div class='docblock'><p>&#39;ui08&#39;</p>
+</div><span id='variant.VcgtType' class='variant'><span id='VcgtType.v' class='invisible'><code>VcgtType</code></span></span><div class='docblock'><p>&#39;vcgt&#39;</p>
+</div><span id='variant.ViewingConditionsType' class='variant'><span id='ViewingConditionsType.v' class='invisible'><code>ViewingConditionsType</code></span></span><div class='docblock'><p>&#39;view&#39;</p>
+</div><span id='variant.XYZType' class='variant'><span id='XYZType.v' class='invisible'><code>XYZType</code></span></span><div class='docblock'><p>&#39;XYZ &#39;</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagTypeSignature.html" title="enum lcms2_sys::ffi::TagTypeSignature">TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#61' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagTypeSignature.html" title="enum lcms2_sys::ffi::TagTypeSignature">TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#61' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../lcms2_sys/ffi/enum.TagTypeSignature.html" title="enum lcms2_sys::ffi::TagTypeSignature">TagTypeSignature</a></code></span></h4>
 <div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
-</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
 <div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagTypeSignature.html' title='lcms2_sys::ffi::TagTypeSignature'>TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-82' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#51' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagTypeSignature.html' title='lcms2_sys::ffi::TagTypeSignature'>TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-83' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#53' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagTypeSignature.html" title="enum lcms2_sys::ffi::TagTypeSignature">TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#61' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../lcms2_sys/ffi/enum.TagTypeSignature.html" title="enum lcms2_sys::ffi::TagTypeSignature">TagTypeSignature</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagTypeSignature.html" title="enum lcms2_sys::ffi::TagTypeSignature">TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#61' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagTypeSignature.html" title="enum lcms2_sys::ffi::TagTypeSignature">TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#61' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagTypeSignature.html" title="enum lcms2_sys::ffi::TagTypeSignature">TagTypeSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#63' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
 <div class='docblock'><p>Formats the value using the given formatter.</p>
 </div></div></section>
     <section id='search' class="content hidden"></section>
@@ -157,11 +200,8 @@
     <script>
         window.rootPath = "../../";
         window.currentCrate = "lcms2_sys";
-        window.playgroundUrl = "";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
-    
     <script defer src="../../search-index.js"></script>
 </body>
 </html>

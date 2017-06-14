@@ -9,6 +9,7 @@
 
     <title>lcms2_sys::ffi::TechnologySignature - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc enum">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'TechnologySignature', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Enum TechnologySignature</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'TechnologySignature', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,54 +43,86 @@
         </form>
     </nav>
 
-    <section id='main' class="content enum">
-<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a>::<wbr><a class='enum' href=''>TechnologySignature</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a>::<wbr><a class="enum" href=''>TechnologySignature</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-462' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#174-201' title='goto source code'>[src]</a></span></h1>
-<pre class='rust enum'>pub enum TechnologySignature {
-    SigDigitalCamera,
-    SigFilmScanner,
-    SigReflectiveScanner,
-    SigInkJetPrinter,
-    SigThermalWaxPrinter,
-    SigElectrophotographicPrinter,
-    SigElectrostaticPrinter,
-    SigDyeSublimationPrinter,
-    SigPhotographicPaperPrinter,
-    SigFilmWriter,
-    SigVideoMonitor,
-    SigVideoCamera,
-    SigProjectionTelevision,
-    SigCRTDisplay,
-    SigPMDisplay,
-    SigAMDisplay,
-    SigPhotoCD,
-    SigPhotoImageSetter,
-    SigGravure,
-    SigOffsetLithography,
-    SigSilkscreen,
-    SigFlexography,
-    SigMotionPictureFilmScanner,
-    SigMotionPictureFilmRecorder,
-    SigDigitalMotionPictureCamera,
-    SigDigitalCinemaProjector,
-}</pre><h2 class='variants'>Variants</h2>
-<span id='variant.SigDigitalCamera' class='variant'><code>SigDigitalCamera</code></span><span id='variant.SigFilmScanner' class='variant'><code>SigFilmScanner</code></span><span id='variant.SigReflectiveScanner' class='variant'><code>SigReflectiveScanner</code></span><span id='variant.SigInkJetPrinter' class='variant'><code>SigInkJetPrinter</code></span><span id='variant.SigThermalWaxPrinter' class='variant'><code>SigThermalWaxPrinter</code></span><span id='variant.SigElectrophotographicPrinter' class='variant'><code>SigElectrophotographicPrinter</code></span><span id='variant.SigElectrostaticPrinter' class='variant'><code>SigElectrostaticPrinter</code></span><span id='variant.SigDyeSublimationPrinter' class='variant'><code>SigDyeSublimationPrinter</code></span><span id='variant.SigPhotographicPaperPrinter' class='variant'><code>SigPhotographicPaperPrinter</code></span><span id='variant.SigFilmWriter' class='variant'><code>SigFilmWriter</code></span><span id='variant.SigVideoMonitor' class='variant'><code>SigVideoMonitor</code></span><span id='variant.SigVideoCamera' class='variant'><code>SigVideoCamera</code></span><span id='variant.SigProjectionTelevision' class='variant'><code>SigProjectionTelevision</code></span><span id='variant.SigCRTDisplay' class='variant'><code>SigCRTDisplay</code></span><span id='variant.SigPMDisplay' class='variant'><code>SigPMDisplay</code></span><span id='variant.SigAMDisplay' class='variant'><code>SigAMDisplay</code></span><span id='variant.SigPhotoCD' class='variant'><code>SigPhotoCD</code></span><span id='variant.SigPhotoImageSetter' class='variant'><code>SigPhotoImageSetter</code></span><span id='variant.SigGravure' class='variant'><code>SigGravure</code></span><span id='variant.SigOffsetLithography' class='variant'><code>SigOffsetLithography</code></span><span id='variant.SigSilkscreen' class='variant'><code>SigSilkscreen</code></span><span id='variant.SigFlexography' class='variant'><code>SigFlexography</code></span><span id='variant.SigMotionPictureFilmScanner' class='variant'><code>SigMotionPictureFilmScanner</code></span><span id='variant.SigMotionPictureFilmRecorder' class='variant'><code>SigMotionPictureFilmRecorder</code></span><span id='variant.SigDigitalMotionPictureCamera' class='variant'><code>SigDigitalMotionPictureCamera</code></span><span id='variant.SigDigitalCinemaProjector' class='variant'><code>SigDigitalCinemaProjector</code></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TechnologySignature.html' title='lcms2_sys::ffi::TechnologySignature'>TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-419' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#171' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TechnologySignature.html' title='lcms2_sys::ffi::TechnologySignature'>TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-422' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#171' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../lcms2_sys/ffi/enum.TechnologySignature.html' title='lcms2_sys::ffi::TechnologySignature'>TechnologySignature</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
-</div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
-<div class='docblock'><p>This method tests for <code>!=</code>.</p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TechnologySignature.html' title='lcms2_sys::ffi::TechnologySignature'>TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-428' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#171' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../lcms2_sys/ffi/enum.TechnologySignature.html' title='lcms2_sys::ffi::TechnologySignature'>TechnologySignature</a></code></h4>
+               </span><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#289-342' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum TechnologySignature {
+    DigitalCamera,
+    FilmScanner,
+    ReflectiveScanner,
+    InkJetPrinter,
+    ThermalWaxPrinter,
+    ElectrophotographicPrinter,
+    ElectrostaticPrinter,
+    DyeSublimationPrinter,
+    PhotographicPaperPrinter,
+    FilmWriter,
+    VideoMonitor,
+    VideoCamera,
+    ProjectionTelevision,
+    CRTDisplay,
+    PMDisplay,
+    AMDisplay,
+    PhotoCD,
+    PhotoImageSetter,
+    Gravure,
+    OffsetLithography,
+    Silkscreen,
+    Flexography,
+    MotionPictureFilmScanner,
+    MotionPictureFilmRecorder,
+    DigitalMotionPictureCamera,
+    DigitalCinemaProjector,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.DigitalCamera' class='variant'><span id='DigitalCamera.v' class='invisible'><code>DigitalCamera</code></span></span><div class='docblock'><p>&#39;dcam&#39;</p>
+</div><span id='variant.FilmScanner' class='variant'><span id='FilmScanner.v' class='invisible'><code>FilmScanner</code></span></span><div class='docblock'><p>&#39;fscn&#39;</p>
+</div><span id='variant.ReflectiveScanner' class='variant'><span id='ReflectiveScanner.v' class='invisible'><code>ReflectiveScanner</code></span></span><div class='docblock'><p>&#39;rscn&#39;</p>
+</div><span id='variant.InkJetPrinter' class='variant'><span id='InkJetPrinter.v' class='invisible'><code>InkJetPrinter</code></span></span><div class='docblock'><p>&#39;ijet&#39;</p>
+</div><span id='variant.ThermalWaxPrinter' class='variant'><span id='ThermalWaxPrinter.v' class='invisible'><code>ThermalWaxPrinter</code></span></span><div class='docblock'><p>&#39;twax&#39;</p>
+</div><span id='variant.ElectrophotographicPrinter' class='variant'><span id='ElectrophotographicPrinter.v' class='invisible'><code>ElectrophotographicPrinter</code></span></span><div class='docblock'><p>&#39;epho&#39;</p>
+</div><span id='variant.ElectrostaticPrinter' class='variant'><span id='ElectrostaticPrinter.v' class='invisible'><code>ElectrostaticPrinter</code></span></span><div class='docblock'><p>&#39;esta&#39;</p>
+</div><span id='variant.DyeSublimationPrinter' class='variant'><span id='DyeSublimationPrinter.v' class='invisible'><code>DyeSublimationPrinter</code></span></span><div class='docblock'><p>&#39;dsub&#39;</p>
+</div><span id='variant.PhotographicPaperPrinter' class='variant'><span id='PhotographicPaperPrinter.v' class='invisible'><code>PhotographicPaperPrinter</code></span></span><div class='docblock'><p>&#39;rpho&#39;</p>
+</div><span id='variant.FilmWriter' class='variant'><span id='FilmWriter.v' class='invisible'><code>FilmWriter</code></span></span><div class='docblock'><p>&#39;fprn&#39;</p>
+</div><span id='variant.VideoMonitor' class='variant'><span id='VideoMonitor.v' class='invisible'><code>VideoMonitor</code></span></span><div class='docblock'><p>&#39;vidm&#39;</p>
+</div><span id='variant.VideoCamera' class='variant'><span id='VideoCamera.v' class='invisible'><code>VideoCamera</code></span></span><div class='docblock'><p>&#39;vidc&#39;</p>
+</div><span id='variant.ProjectionTelevision' class='variant'><span id='ProjectionTelevision.v' class='invisible'><code>ProjectionTelevision</code></span></span><div class='docblock'><p>&#39;pjtv&#39;</p>
+</div><span id='variant.CRTDisplay' class='variant'><span id='CRTDisplay.v' class='invisible'><code>CRTDisplay</code></span></span><div class='docblock'><p>&#39;CRT &#39;</p>
+</div><span id='variant.PMDisplay' class='variant'><span id='PMDisplay.v' class='invisible'><code>PMDisplay</code></span></span><div class='docblock'><p>&#39;PMD &#39;</p>
+</div><span id='variant.AMDisplay' class='variant'><span id='AMDisplay.v' class='invisible'><code>AMDisplay</code></span></span><div class='docblock'><p>&#39;AMD &#39;</p>
+</div><span id='variant.PhotoCD' class='variant'><span id='PhotoCD.v' class='invisible'><code>PhotoCD</code></span></span><div class='docblock'><p>&#39;KPCD&#39;</p>
+</div><span id='variant.PhotoImageSetter' class='variant'><span id='PhotoImageSetter.v' class='invisible'><code>PhotoImageSetter</code></span></span><div class='docblock'><p>&#39;imgs&#39;</p>
+</div><span id='variant.Gravure' class='variant'><span id='Gravure.v' class='invisible'><code>Gravure</code></span></span><div class='docblock'><p>&#39;grav&#39;</p>
+</div><span id='variant.OffsetLithography' class='variant'><span id='OffsetLithography.v' class='invisible'><code>OffsetLithography</code></span></span><div class='docblock'><p>&#39;offs&#39;</p>
+</div><span id='variant.Silkscreen' class='variant'><span id='Silkscreen.v' class='invisible'><code>Silkscreen</code></span></span><div class='docblock'><p>&#39;silk&#39;</p>
+</div><span id='variant.Flexography' class='variant'><span id='Flexography.v' class='invisible'><code>Flexography</code></span></span><div class='docblock'><p>&#39;flex&#39;</p>
+</div><span id='variant.MotionPictureFilmScanner' class='variant'><span id='MotionPictureFilmScanner.v' class='invisible'><code>MotionPictureFilmScanner</code></span></span><div class='docblock'><p>&#39;mpfs&#39;</p>
+</div><span id='variant.MotionPictureFilmRecorder' class='variant'><span id='MotionPictureFilmRecorder.v' class='invisible'><code>MotionPictureFilmRecorder</code></span></span><div class='docblock'><p>&#39;mpfr&#39;</p>
+</div><span id='variant.DigitalMotionPictureCamera' class='variant'><span id='DigitalMotionPictureCamera.v' class='invisible'><code>DigitalMotionPictureCamera</code></span></span><div class='docblock'><p>&#39;dmpc&#39;</p>
+</div><span id='variant.DigitalCinemaProjector' class='variant'><span id='DigitalCinemaProjector.v' class='invisible'><code>DigitalCinemaProjector</code></span></span><div class='docblock'><p>&#39;dcpj&#39;</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TechnologySignature.html" title="enum lcms2_sys::ffi::TechnologySignature">TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#286' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TechnologySignature.html" title="enum lcms2_sys::ffi::TechnologySignature">TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#286' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../lcms2_sys/ffi/enum.TechnologySignature.html" title="enum lcms2_sys::ffi::TechnologySignature">TechnologySignature</a></code></span></h4>
 <div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
-</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
 <div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TechnologySignature.html' title='lcms2_sys::ffi::TechnologySignature'>TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-431' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#171' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TechnologySignature.html' title='lcms2_sys::ffi::TechnologySignature'>TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-432' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#173' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TechnologySignature.html" title="enum lcms2_sys::ffi::TechnologySignature">TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#286' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../lcms2_sys/ffi/enum.TechnologySignature.html" title="enum lcms2_sys::ffi::TechnologySignature">TechnologySignature</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TechnologySignature.html" title="enum lcms2_sys::ffi::TechnologySignature">TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#286' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TechnologySignature.html" title="enum lcms2_sys::ffi::TechnologySignature">TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#286' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TechnologySignature.html" title="enum lcms2_sys::ffi::TechnologySignature">TechnologySignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#288' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
 <div class='docblock'><p>Formats the value using the given formatter.</p>
 </div></div></section>
     <section id='search' class="content hidden"></section>
@@ -147,11 +180,8 @@
     <script>
         window.rootPath = "../../";
         window.currentCrate = "lcms2_sys";
-        window.playgroundUrl = "";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
-    
     <script defer src="../../search-index.js"></script>
 </body>
 </html>

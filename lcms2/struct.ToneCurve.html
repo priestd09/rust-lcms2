@@ -9,6 +9,7 @@
 
     <title>lcms2::ToneCurve - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc struct">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='index.html'>lcms2</a></p><script>window.sidebarCurrent = {name: 'ToneCurve', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Struct ToneCurve</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#deref-methods">Methods from Deref&lt;Target=ToneCurveRef&gt;</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='index.html'>lcms2</a></p><script>window.sidebarCurrent = {name: 'ToneCurve', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,35 +43,88 @@
         </form>
     </nav>
 
-    <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>lcms2</a>::<wbr><a class='struct' href=''>ToneCurve</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>lcms2</a>::<wbr><a class="struct" href=''>ToneCurve</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-246' class='srclink' href='../src/lcms2/src/lib.rs.html#34-36' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ToneCurve {
-    // some fields omitted
-}</pre><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../lcms2/struct.ToneCurve.html' title='lcms2::ToneCurve'>ToneCurve</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-187' class='srclink' href='../src/lcms2/src/tonecurve.rs.html#7-70' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(gamma: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='struct' href='../lcms2/struct.ToneCurve.html' title='lcms2::ToneCurve'>ToneCurve</a></code></h4>
-<h4 id='method.new_tabulated' class='method'><code>fn <a href='#method.new_tabulated' class='fnname'>new_tabulated</a>(values: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='struct' href='../lcms2/struct.ToneCurve.html' title='lcms2::ToneCurve'>ToneCurve</a></code></h4>
-<h4 id='method.new_tabulated_float' class='method'><code>fn <a href='#method.new_tabulated_float' class='fnname'>new_tabulated_float</a>(values: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='struct' href='../lcms2/struct.ToneCurve.html' title='lcms2::ToneCurve'>ToneCurve</a></code></h4>
-<h4 id='method.reversed' class='method'><code>fn <a href='#method.reversed' class='fnname'>reversed</a>(&amp;self) -&gt; <a class='struct' href='../lcms2/struct.ToneCurve.html' title='lcms2::ToneCurve'>ToneCurve</a></code></h4>
-<h4 id='method.is_multisegment' class='method'><code>fn <a href='#method.is_multisegment' class='fnname'>is_multisegment</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<h4 id='method.is_linear' class='method'><code>fn <a href='#method.is_linear' class='fnname'>is_linear</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<h4 id='method.is_monotonic' class='method'><code>fn <a href='#method.is_monotonic' class='fnname'>is_monotonic</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<h4 id='method.is_descending' class='method'><code>fn <a href='#method.is_descending' class='fnname'>is_descending</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<h4 id='method.parametric_type' class='method'><code>fn <a href='#method.parametric_type' class='fnname'>parametric_type</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></h4>
-<h4 id='method.estimated_gamma' class='method'><code>fn <a href='#method.estimated_gamma' class='fnname'>estimated_gamma</a>(&amp;self, precision: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a></code></h4>
-<h4 id='method.smooth' class='method'><code>fn <a href='#method.smooth' class='fnname'>smooth</a>(&amp;mut self, lambda: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<h4 id='method.estimated_entries' class='method'><code>fn <a href='#method.estimated_entries' class='fnname'>estimated_entries</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a></code></h4>
-</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../lcms2/struct.ToneCurve.html' title='lcms2::ToneCurve'>ToneCurve</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-221' class='srclink' href='../src/lcms2/src/tonecurve.rs.html#72-76' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../lcms2/struct.ToneCurve.html' title='lcms2::ToneCurve'>ToneCurve</a></code></h4>
-<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
-</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
-<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../lcms2/struct.ToneCurve.html' title='lcms2::ToneCurve'>ToneCurve</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-224' class='srclink' href='../src/lcms2/src/tonecurve.rs.html#78-84' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.drop' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop' class='fnname'>drop</a>(&amp;mut self)</code></h4>
+               </span></span></h1>
+<pre class='rust struct'>pub struct ToneCurve(_);</pre><div class='docblock'><p>Owned version of <code>ToneCurveRef</code></p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/lcms2/tonecurve.rs.html#18-81' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class="method"><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(gamma: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>) -&gt; Self</code></span></h4>
+<div class='docblock'><p>Simplified wrapper to <code>new_parametric</code>. Builds a parametric curve of type 1.</p>
+</div><h4 id='method.new_tabulated' class="method"><span id='new_tabulated.v' class='invisible'><code>fn <a href='#method.new_tabulated' class='fnname'>new_tabulated</a>(values: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">]</a>) -&gt; Self</code></span></h4>
+<div class='docblock'><p>Builds a tone curve based on a table of 16-bit values. Tone curves built with this function are restricted to 0…1.0 domain.</p>
+</div><h4 id='method.new_tabulated_float' class="method"><span id='new_tabulated_float.v' class='invisible'><code>fn <a href='#method.new_tabulated_float' class='fnname'>new_tabulated_float</a>(values: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">]</a>) -&gt; Self</code></span></h4>
+<div class='docblock'><p>Builds a tone curve based on a table of floating point  values. Tone curves built with this function are <strong>not</strong> restricted to 0…1.0 domain.</p>
+</div><h4 id='method.new_parametric' class="method"><span id='new_parametric.v' class='invisible'><code>fn <a href='#method.new_parametric' class='fnname'>new_parametric</a>(curve_type: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>, params: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">]</a>) -&gt; <a class="type" href="../lcms2/type.LCMSResult.html" title="type lcms2::LCMSResult">LCMSResult</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>See Table 52 in LCMS documentation for descriptino of the types.</p>
+
+<ol>
+<li>Exponential</li>
+<li>CIE 122-1966</li>
+<li>IEC 61966-3</li>
+<li>IEC 61966-2.1 (sRGB)</li>
+<li>See PDF</li>
+<li>Identical to 5, unbounded.</li>
+<li>See PDF</li>
+<li>See PDF</li>
+<li>(108) S-Shaped sigmoidal</li>
+</ol>
+
+<p>Always use 10-parameter slice for plug-in types.</p>
+</div></div><h2 id='deref-methods'>Methods from <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html" title="trait core::ops::Deref">Deref</a>&lt;Target = <a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a>&gt;</h2><div class='impl-items'><h4 id='method.reversed' class="method"><span id='reversed.v' class='invisible'><code>fn <a href='#method.reversed' class='fnname'>reversed</a>(&amp;self) -&gt; <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span></h4>
+<div class='docblock'><p>Creates a tone curve that is the inverse  of given tone curve.</p>
+</div><h4 id='method.reversed_samples' class="method"><span id='reversed_samples.v' class='invisible'><code>fn <a href='#method.reversed_samples' class='fnname'>reversed_samples</a>(&amp;self, samples: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span></h4>
+<div class='docblock'><p>Creates a tone curve that is the inverse  of given tone curve. In the case it couldn’t be analytically reversed, a tablulated curve of nResultSamples is created.</p>
+</div><h4 id='method.join' class="method"><span id='join.v' class='invisible'><code>fn <a href='#method.join' class='fnname'>join</a>(&amp;self, y: &amp;<a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a>, points: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span></h4>
+<div class='docblock'><p>Composites two tone curves in the form Y<sup>-1(X(t))</sup>
+(self is X, the argument is Y)</p>
+</div><h4 id='method.is_multisegment' class="method"><span id='is_multisegment.v' class='invisible'><code>fn <a href='#method.is_multisegment' class='fnname'>is_multisegment</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Returns TRUE if the tone curve contains more than one segment, FALSE if it has only one segment.</p>
+</div><h4 id='method.is_linear' class="method"><span id='is_linear.v' class='invisible'><code>fn <a href='#method.is_linear' class='fnname'>is_linear</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Returns an estimation of cube being an identity (1:1) in the [0..1] domain. Does not take unbounded parts into account. This is just a coarse approximation, with no mathematical validity.</p>
+</div><h4 id='method.is_monotonic' class="method"><span id='is_monotonic.v' class='invisible'><code>fn <a href='#method.is_monotonic' class='fnname'>is_monotonic</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Returns an estimation of monotonicity of curve in the [0..1] domain. Does not take unbounded parts into account. This is just a coarse approximation, with no mathematical validity.</p>
+</div><h4 id='method.is_descending' class="method"><span id='is_descending.v' class='invisible'><code>fn <a href='#method.is_descending' class='fnname'>is_descending</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Does not take unbounded parts into account.</p>
+</div><h4 id='method.parametric_type' class="method"><span id='parametric_type.v' class='invisible'><code>fn <a href='#method.parametric_type' class='fnname'>parametric_type</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span></h4>
+<h4 id='method.estimated_gamma' class="method"><span id='estimated_gamma.v' class='invisible'><code>fn <a href='#method.estimated_gamma' class='fnname'>estimated_gamma</a>(&amp;self, precision: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>&gt;</code></span></h4>
+<div class='docblock'><p>Estimates the apparent gamma of the tone curve by using least squares fitting.
+Precision: The maximum standard deviation allowed on the residuals, 0.01 is a fair value, set it to a big number to fit any curve, mo matter how good is the fit.</p>
+</div><h4 id='method.smooth' class="method"><span id='smooth.v' class='invisible'><code>fn <a href='#method.smooth' class='fnname'>smooth</a>(&amp;mut self, lambda: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Smoothes tone curve according to the lambda parameter. From: Eilers, P.H.C. (1994) Smoothing and interpolation with finite differences. in: Graphic Gems IV, Heckbert, P.S. (ed.), Academic press.</p>
+</div><h4 id='method.estimated_entries' class="method"><span id='estimated_entries.v' class='invisible'><code>fn <a href='#method.estimated_entries' class='fnname'>estimated_entries</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">]</a></code></span></h4>
+<div class='docblock'><p>Tone curves do maintain a shadow low-resolution tabulated representation of the curve. This function returns a pointer to this table.</p>
+</div><h4 id='method.eval' class="method"><span id='eval.v' class='invisible'><code>fn <a href='#method.eval' class='fnname'>eval</a>&lt;ToneCurveValue:&nbsp;FloatOrU16&gt;(&amp;self, v: ToneCurveValue) -&gt; ToneCurveValue</code></span></h4>
+<div class='docblock'><p>Evaluates the given number (u16 or f32) across the given tone curve.</p>
+
+<p>This function is significantly faster for u16, since it uses a pre-computed 16-bit lookup table.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignType.html" title="trait foreign_types::ForeignType">ForeignType</a> for <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='associatedtype.CType' class="type"><span id='CType.t' class='invisible'><code>type <a href='https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignType.html#associatedtype.CType' class="type">CType</a> = ToneCurve</code></span></h4>
+<div class='docblock'><p>The raw C type.</p>
+</div><h4 id='associatedtype.Ref' class="type"><span id='Ref.t' class='invisible'><code>type <a href='https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignType.html#associatedtype.Ref' class="type">Ref</a> = <a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a></code></span></h4>
+<div class='docblock'><p>The type representing a reference to this type.</p>
+</div><h4 id='method.from_ptr' class="method"><span id='from_ptr.v' class='invisible'><code>unsafe fn <a href='https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignType.html#tymethod.from_ptr' class='fnname'>from_ptr</a>(ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a>ToneCurve) -&gt; <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span></h4>
+<div class='docblock'><p>Constructs an instance of this type from its raw type.</p>
+</div><h4 id='method.as_ptr' class="method"><span id='as_ptr.v' class='invisible'><code>fn <a href='https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignType.html#tymethod.as_ptr' class='fnname'>as_ptr</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a>ToneCurve</code></span></h4>
+<div class='docblock'><p>Returns a raw pointer to the wrapped value.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html" title="trait core::ops::Drop">Drop</a> for <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.drop' class="method"><span id='drop.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop' class='fnname'>drop</a>(&amp;mut self)</code></span></h4>
 <div class='docblock'><p>A method called when the value goes out of scope. <a href="https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html" title="trait core::ops::Deref">Deref</a> for <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Target' class="type"><span id='Target.t' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html#associatedtype.Target' class="type">Target</a> = <a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a></code></span></h4>
+<div class='docblock'><p>The resulting type after dereferencing</p>
+</div><h4 id='method.deref' class="method"><span id='deref.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html#tymethod.deref' class='fnname'>deref</a>(&amp;self) -&gt; &amp;<a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a></code></span></h4>
+<div class='docblock'><p>The method called to dereference a value</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/trait.DerefMut.html" title="trait core::ops::DerefMut">DerefMut</a> for <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.deref_mut' class="method"><span id='deref_mut.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.DerefMut.html#tymethod.deref_mut' class='fnname'>deref_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a></code></span></h4>
+<div class='docblock'><p>The method called to mutably dereference a value</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/lcms2/tonecurve.rs.html#161-167' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
 </div></div></section>
     <section id='search' class="content hidden"></section>
 
@@ -127,11 +181,8 @@
     <script>
         window.rootPath = "../";
         window.currentCrate = "lcms2";
-        window.playgroundUrl = "";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>

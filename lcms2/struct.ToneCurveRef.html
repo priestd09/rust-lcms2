@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ToneCurveRef` struct in crate `lcms2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ToneCurveRef">
+
+    <title>lcms2::ToneCurveRef - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ToneCurveRef</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='index.html'>lcms2</a></p><script>window.sidebarCurrent = {name: 'ToneCurveRef', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>lcms2</a>::<wbr><a class="struct" href=''>ToneCurveRef</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span></span></h1>
+<pre class='rust struct'>pub struct ToneCurveRef(_);</pre><div class='docblock'><p>Tone curves are powerful constructs that can contain curves specified in diverse ways.</p>
+
+<p>The curve is stored in segments, where each segment can be sampled or specified by parameters. A 16.bit simplification of the <em>whole</em> curve is kept for optimization purposes. For float operation, each segment is evaluated separately. Plug-ins may be used to define new parametric schemes.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/lcms2/tonecurve.rs.html#83-159' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.reversed' class="method"><span id='reversed.v' class='invisible'><code>fn <a href='#method.reversed' class='fnname'>reversed</a>(&amp;self) -&gt; <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span></h4>
+<div class='docblock'><p>Creates a tone curve that is the inverse  of given tone curve.</p>
+</div><h4 id='method.reversed_samples' class="method"><span id='reversed_samples.v' class='invisible'><code>fn <a href='#method.reversed_samples' class='fnname'>reversed_samples</a>(&amp;self, samples: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span></h4>
+<div class='docblock'><p>Creates a tone curve that is the inverse  of given tone curve. In the case it couldn’t be analytically reversed, a tablulated curve of nResultSamples is created.</p>
+</div><h4 id='method.join' class="method"><span id='join.v' class='invisible'><code>fn <a href='#method.join' class='fnname'>join</a>(&amp;self, y: &amp;<a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a>, points: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="struct" href="../lcms2/struct.ToneCurve.html" title="struct lcms2::ToneCurve">ToneCurve</a></code></span></h4>
+<div class='docblock'><p>Composites two tone curves in the form Y<sup>-1(X(t))</sup>
+(self is X, the argument is Y)</p>
+</div><h4 id='method.is_multisegment' class="method"><span id='is_multisegment.v' class='invisible'><code>fn <a href='#method.is_multisegment' class='fnname'>is_multisegment</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Returns TRUE if the tone curve contains more than one segment, FALSE if it has only one segment.</p>
+</div><h4 id='method.is_linear' class="method"><span id='is_linear.v' class='invisible'><code>fn <a href='#method.is_linear' class='fnname'>is_linear</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Returns an estimation of cube being an identity (1:1) in the [0..1] domain. Does not take unbounded parts into account. This is just a coarse approximation, with no mathematical validity.</p>
+</div><h4 id='method.is_monotonic' class="method"><span id='is_monotonic.v' class='invisible'><code>fn <a href='#method.is_monotonic' class='fnname'>is_monotonic</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Returns an estimation of monotonicity of curve in the [0..1] domain. Does not take unbounded parts into account. This is just a coarse approximation, with no mathematical validity.</p>
+</div><h4 id='method.is_descending' class="method"><span id='is_descending.v' class='invisible'><code>fn <a href='#method.is_descending' class='fnname'>is_descending</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Does not take unbounded parts into account.</p>
+</div><h4 id='method.parametric_type' class="method"><span id='parametric_type.v' class='invisible'><code>fn <a href='#method.parametric_type' class='fnname'>parametric_type</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span></h4>
+<h4 id='method.estimated_gamma' class="method"><span id='estimated_gamma.v' class='invisible'><code>fn <a href='#method.estimated_gamma' class='fnname'>estimated_gamma</a>(&amp;self, precision: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>&gt;</code></span></h4>
+<div class='docblock'><p>Estimates the apparent gamma of the tone curve by using least squares fitting.
+Precision: The maximum standard deviation allowed on the residuals, 0.01 is a fair value, set it to a big number to fit any curve, mo matter how good is the fit.</p>
+</div><h4 id='method.smooth' class="method"><span id='smooth.v' class='invisible'><code>fn <a href='#method.smooth' class='fnname'>smooth</a>(&amp;mut self, lambda: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Smoothes tone curve according to the lambda parameter. From: Eilers, P.H.C. (1994) Smoothing and interpolation with finite differences. in: Graphic Gems IV, Heckbert, P.S. (ed.), Academic press.</p>
+</div><h4 id='method.estimated_entries' class="method"><span id='estimated_entries.v' class='invisible'><code>fn <a href='#method.estimated_entries' class='fnname'>estimated_entries</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">]</a></code></span></h4>
+<div class='docblock'><p>Tone curves do maintain a shadow low-resolution tabulated representation of the curve. This function returns a pointer to this table.</p>
+</div><h4 id='method.eval' class="method"><span id='eval.v' class='invisible'><code>fn <a href='#method.eval' class='fnname'>eval</a>&lt;ToneCurveValue:&nbsp;FloatOrU16&gt;(&amp;self, v: ToneCurveValue) -&gt; ToneCurveValue</code></span></h4>
+<div class='docblock'><p>Evaluates the given number (u16 or f32) across the given tone curve.</p>
+
+<p>This function is significantly faster for u16, since it uses a pre-computed 16-bit lookup table.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignTypeRef.html" title="trait foreign_types::ForeignTypeRef">ForeignTypeRef</a> for <a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='associatedtype.CType' class="type"><span id='CType.t' class='invisible'><code>type <a href='https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignTypeRef.html#associatedtype.CType' class="type">CType</a> = ToneCurve</code></span></h4>
+<div class='docblock'><p>The raw C type.</p>
+</div><h4 id='method.from_ptr' class="method"><span id='from_ptr.v' class='invisible'><code>unsafe fn <a href='https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignTypeRef.html#method.from_ptr' class='fnname'>from_ptr</a>&lt;'a&gt;(ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a>Self::<a class="type" href="https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignTypeRef.html#associatedtype.CType" title="type foreign_types::ForeignTypeRef::CType">CType</a>) -&gt; &amp;'a Self</code></span></h4>
+<div class='docblock'><p>Constructs a shared instance of this type from its raw type.</p>
+</div><h4 id='method.from_ptr_mut' class="method"><span id='from_ptr_mut.v' class='invisible'><code>unsafe fn <a href='https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignTypeRef.html#method.from_ptr_mut' class='fnname'>from_ptr_mut</a>&lt;'a&gt;(ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a>Self::<a class="type" href="https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignTypeRef.html#associatedtype.CType" title="type foreign_types::ForeignTypeRef::CType">CType</a>) -&gt; &amp;'a mut Self</code></span></h4>
+<div class='docblock'><p>Constructs a mutable reference of this type from its raw type.</p>
+</div><h4 id='method.as_ptr' class="method"><span id='as_ptr.v' class='invisible'><code>fn <a href='https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignTypeRef.html#method.as_ptr' class='fnname'>as_ptr</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a>Self::<a class="type" href="https://docs.rs/foreign-types/0.2.0/foreign_types/trait.ForeignTypeRef.html#associatedtype.CType" title="type foreign_types::ForeignTypeRef::CType">CType</a></code></span></h4>
+<div class='docblock'><p>Returns a raw pointer to the wrapped value.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../lcms2/struct.ToneCurveRef.html" title="struct lcms2::ToneCurveRef">ToneCurveRef</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/lcms2/tonecurve.rs.html#169-173' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, f: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "lcms2";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

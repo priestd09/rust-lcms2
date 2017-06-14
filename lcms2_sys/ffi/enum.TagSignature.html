@@ -9,6 +9,7 @@
 
     <title>lcms2_sys::ffi::TagSignature - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc enum">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'TagSignature', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Enum TagSignature</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'TagSignature', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,95 +43,170 @@
         </form>
     </nav>
 
-    <section id='main' class="content enum">
-<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a>::<wbr><a class='enum' href=''>TagSignature</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>lcms2_sys</a>::<wbr><a href='index.html'>ffi</a>::<wbr><a class="enum" href=''>TagSignature</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-283' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#100-168' title='goto source code'>[src]</a></span></h1>
-<pre class='rust enum'>pub enum TagSignature {
-    SigAToB0Tag,
-    SigAToB1Tag,
-    SigAToB2Tag,
-    SigBlueColorantTag,
-    SigBlueTRCTag,
-    SigBToA0Tag,
-    SigBToA1Tag,
-    SigBToA2Tag,
-    SigCalibrationDateTimeTag,
-    SigCharTargetTag,
-    SigChromaticAdaptationTag,
-    SigChromaticityTag,
-    SigColorantOrderTag,
-    SigColorantTableTag,
-    SigColorantTableOutTag,
-    SigColorimetricIntentImageStateTag,
-    SigCopyrightTag,
-    SigCrdInfoTag,
-    SigDataTag,
-    SigDateTimeTag,
-    SigDeviceMfgDescTag,
-    SigDeviceModelDescTag,
-    SigDeviceSettingsTag,
-    SigDToB0Tag,
-    SigDToB1Tag,
-    SigDToB2Tag,
-    SigDToB3Tag,
-    SigBToD0Tag,
-    SigBToD1Tag,
-    SigBToD2Tag,
-    SigBToD3Tag,
-    SigGamutTag,
-    SigGrayTRCTag,
-    SigGreenColorantTag,
-    SigGreenTRCTag,
-    SigLuminanceTag,
-    SigMeasurementTag,
-    SigMediaBlackPointTag,
-    SigMediaWhitePointTag,
-    SigNamedColorTag,
-    SigNamedColor2Tag,
-    SigOutputResponseTag,
-    SigPerceptualRenderingIntentGamutTag,
-    SigPreview0Tag,
-    SigPreview1Tag,
-    SigPreview2Tag,
-    SigProfileDescriptionTag,
-    SigProfileDescriptionMLTag,
-    SigProfileSequenceDescTag,
-    SigProfileSequenceIdTag,
-    SigPs2CRD0Tag,
-    SigPs2CRD1Tag,
-    SigPs2CRD2Tag,
-    SigPs2CRD3Tag,
-    SigPs2CSATag,
-    SigPs2RenderingIntentTag,
-    SigRedColorantTag,
-    SigRedTRCTag,
-    SigSaturationRenderingIntentGamutTag,
-    SigScreeningDescTag,
-    SigScreeningTag,
-    SigTechnologyTag,
-    SigUcrBgTag,
-    SigViewingCondDescTag,
-    SigViewingConditionsTag,
-    SigVcgtTag,
-    SigMetaTag,
-}</pre><h2 class='variants'>Variants</h2>
-<span id='variant.SigAToB0Tag' class='variant'><code>SigAToB0Tag</code></span><span id='variant.SigAToB1Tag' class='variant'><code>SigAToB1Tag</code></span><span id='variant.SigAToB2Tag' class='variant'><code>SigAToB2Tag</code></span><span id='variant.SigBlueColorantTag' class='variant'><code>SigBlueColorantTag</code></span><span id='variant.SigBlueTRCTag' class='variant'><code>SigBlueTRCTag</code></span><span id='variant.SigBToA0Tag' class='variant'><code>SigBToA0Tag</code></span><span id='variant.SigBToA1Tag' class='variant'><code>SigBToA1Tag</code></span><span id='variant.SigBToA2Tag' class='variant'><code>SigBToA2Tag</code></span><span id='variant.SigCalibrationDateTimeTag' class='variant'><code>SigCalibrationDateTimeTag</code></span><span id='variant.SigCharTargetTag' class='variant'><code>SigCharTargetTag</code></span><span id='variant.SigChromaticAdaptationTag' class='variant'><code>SigChromaticAdaptationTag</code></span><span id='variant.SigChromaticityTag' class='variant'><code>SigChromaticityTag</code></span><span id='variant.SigColorantOrderTag' class='variant'><code>SigColorantOrderTag</code></span><span id='variant.SigColorantTableTag' class='variant'><code>SigColorantTableTag</code></span><span id='variant.SigColorantTableOutTag' class='variant'><code>SigColorantTableOutTag</code></span><span id='variant.SigColorimetricIntentImageStateTag' class='variant'><code>SigColorimetricIntentImageStateTag</code></span><span id='variant.SigCopyrightTag' class='variant'><code>SigCopyrightTag</code></span><span id='variant.SigCrdInfoTag' class='variant'><code>SigCrdInfoTag</code></span><span id='variant.SigDataTag' class='variant'><code>SigDataTag</code></span><span id='variant.SigDateTimeTag' class='variant'><code>SigDateTimeTag</code></span><span id='variant.SigDeviceMfgDescTag' class='variant'><code>SigDeviceMfgDescTag</code></span><span id='variant.SigDeviceModelDescTag' class='variant'><code>SigDeviceModelDescTag</code></span><span id='variant.SigDeviceSettingsTag' class='variant'><code>SigDeviceSettingsTag</code></span><span id='variant.SigDToB0Tag' class='variant'><code>SigDToB0Tag</code></span><span id='variant.SigDToB1Tag' class='variant'><code>SigDToB1Tag</code></span><span id='variant.SigDToB2Tag' class='variant'><code>SigDToB2Tag</code></span><span id='variant.SigDToB3Tag' class='variant'><code>SigDToB3Tag</code></span><span id='variant.SigBToD0Tag' class='variant'><code>SigBToD0Tag</code></span><span id='variant.SigBToD1Tag' class='variant'><code>SigBToD1Tag</code></span><span id='variant.SigBToD2Tag' class='variant'><code>SigBToD2Tag</code></span><span id='variant.SigBToD3Tag' class='variant'><code>SigBToD3Tag</code></span><span id='variant.SigGamutTag' class='variant'><code>SigGamutTag</code></span><span id='variant.SigGrayTRCTag' class='variant'><code>SigGrayTRCTag</code></span><span id='variant.SigGreenColorantTag' class='variant'><code>SigGreenColorantTag</code></span><span id='variant.SigGreenTRCTag' class='variant'><code>SigGreenTRCTag</code></span><span id='variant.SigLuminanceTag' class='variant'><code>SigLuminanceTag</code></span><span id='variant.SigMeasurementTag' class='variant'><code>SigMeasurementTag</code></span><span id='variant.SigMediaBlackPointTag' class='variant'><code>SigMediaBlackPointTag</code></span><span id='variant.SigMediaWhitePointTag' class='variant'><code>SigMediaWhitePointTag</code></span><span id='variant.SigNamedColorTag' class='variant'><code>SigNamedColorTag</code></span><span id='variant.SigNamedColor2Tag' class='variant'><code>SigNamedColor2Tag</code></span><span id='variant.SigOutputResponseTag' class='variant'><code>SigOutputResponseTag</code></span><span id='variant.SigPerceptualRenderingIntentGamutTag' class='variant'><code>SigPerceptualRenderingIntentGamutTag</code></span><span id='variant.SigPreview0Tag' class='variant'><code>SigPreview0Tag</code></span><span id='variant.SigPreview1Tag' class='variant'><code>SigPreview1Tag</code></span><span id='variant.SigPreview2Tag' class='variant'><code>SigPreview2Tag</code></span><span id='variant.SigProfileDescriptionTag' class='variant'><code>SigProfileDescriptionTag</code></span><span id='variant.SigProfileDescriptionMLTag' class='variant'><code>SigProfileDescriptionMLTag</code></span><span id='variant.SigProfileSequenceDescTag' class='variant'><code>SigProfileSequenceDescTag</code></span><span id='variant.SigProfileSequenceIdTag' class='variant'><code>SigProfileSequenceIdTag</code></span><span id='variant.SigPs2CRD0Tag' class='variant'><code>SigPs2CRD0Tag</code></span><span id='variant.SigPs2CRD1Tag' class='variant'><code>SigPs2CRD1Tag</code></span><span id='variant.SigPs2CRD2Tag' class='variant'><code>SigPs2CRD2Tag</code></span><span id='variant.SigPs2CRD3Tag' class='variant'><code>SigPs2CRD3Tag</code></span><span id='variant.SigPs2CSATag' class='variant'><code>SigPs2CSATag</code></span><span id='variant.SigPs2RenderingIntentTag' class='variant'><code>SigPs2RenderingIntentTag</code></span><span id='variant.SigRedColorantTag' class='variant'><code>SigRedColorantTag</code></span><span id='variant.SigRedTRCTag' class='variant'><code>SigRedTRCTag</code></span><span id='variant.SigSaturationRenderingIntentGamutTag' class='variant'><code>SigSaturationRenderingIntentGamutTag</code></span><span id='variant.SigScreeningDescTag' class='variant'><code>SigScreeningDescTag</code></span><span id='variant.SigScreeningTag' class='variant'><code>SigScreeningTag</code></span><span id='variant.SigTechnologyTag' class='variant'><code>SigTechnologyTag</code></span><span id='variant.SigUcrBgTag' class='variant'><code>SigUcrBgTag</code></span><span id='variant.SigViewingCondDescTag' class='variant'><code>SigViewingCondDescTag</code></span><span id='variant.SigViewingConditionsTag' class='variant'><code>SigViewingConditionsTag</code></span><span id='variant.SigVcgtTag' class='variant'><code>SigVcgtTag</code></span><span id='variant.SigMetaTag' class='variant'><code>SigMetaTag</code></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagSignature.html' title='lcms2_sys::ffi::TagSignature'>TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-199' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#97' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagSignature.html' title='lcms2_sys::ffi::TagSignature'>TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-202' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#97' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../lcms2_sys/ffi/enum.TagSignature.html' title='lcms2_sys::ffi::TagSignature'>TagSignature</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
-</div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
-<div class='docblock'><p>This method tests for <code>!=</code>.</p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagSignature.html' title='lcms2_sys::ffi::TagSignature'>TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-208' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#97' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../lcms2_sys/ffi/enum.TagSignature.html' title='lcms2_sys::ffi::TagSignature'>TagSignature</a></code></h4>
+               </span><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#146-283' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum TagSignature {
+    AToB0Tag,
+    AToB1Tag,
+    AToB2Tag,
+    BlueColorantTag,
+    BlueTRCTag,
+    BToA0Tag,
+    BToA1Tag,
+    BToA2Tag,
+    CalibrationDateTimeTag,
+    CharTargetTag,
+    ChromaticAdaptationTag,
+    ChromaticityTag,
+    ColorantOrderTag,
+    ColorantTableTag,
+    ColorantTableOutTag,
+    ColorimetricIntentImageStateTag,
+    CopyrightTag,
+    CrdInfoTag,
+    DataTag,
+    DateTimeTag,
+    DeviceMfgDescTag,
+    DeviceModelDescTag,
+    DeviceSettingsTag,
+    DToB0Tag,
+    DToB1Tag,
+    DToB2Tag,
+    DToB3Tag,
+    BToD0Tag,
+    BToD1Tag,
+    BToD2Tag,
+    BToD3Tag,
+    GamutTag,
+    GrayTRCTag,
+    GreenColorantTag,
+    GreenTRCTag,
+    LuminanceTag,
+    MeasurementTag,
+    MediaBlackPointTag,
+    MediaWhitePointTag,
+    NamedColorTag,
+    NamedColor2Tag,
+    OutputResponseTag,
+    PerceptualRenderingIntentGamutTag,
+    Preview0Tag,
+    Preview1Tag,
+    Preview2Tag,
+    ProfileDescriptionTag,
+    ProfileDescriptionMLTag,
+    ProfileSequenceDescTag,
+    ProfileSequenceIdTag,
+    Ps2CRD0Tag,
+    Ps2CRD1Tag,
+    Ps2CRD2Tag,
+    Ps2CRD3Tag,
+    Ps2CSATag,
+    Ps2RenderingIntentTag,
+    RedColorantTag,
+    RedTRCTag,
+    SaturationRenderingIntentGamutTag,
+    ScreeningDescTag,
+    ScreeningTag,
+    TechnologyTag,
+    UcrBgTag,
+    ViewingCondDescTag,
+    ViewingConditionsTag,
+    VcgtTag,
+    MetaTag,
+    ArgyllArtsTag,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.AToB0Tag' class='variant'><span id='AToB0Tag.v' class='invisible'><code>AToB0Tag</code></span></span><div class='docblock'><p>&#39;A2B0&#39;</p>
+</div><span id='variant.AToB1Tag' class='variant'><span id='AToB1Tag.v' class='invisible'><code>AToB1Tag</code></span></span><div class='docblock'><p>&#39;A2B1&#39;</p>
+</div><span id='variant.AToB2Tag' class='variant'><span id='AToB2Tag.v' class='invisible'><code>AToB2Tag</code></span></span><div class='docblock'><p>&#39;A2B2&#39;</p>
+</div><span id='variant.BlueColorantTag' class='variant'><span id='BlueColorantTag.v' class='invisible'><code>BlueColorantTag</code></span></span><div class='docblock'><p>&#39;bXYZ&#39;</p>
+</div><span id='variant.BlueTRCTag' class='variant'><span id='BlueTRCTag.v' class='invisible'><code>BlueTRCTag</code></span></span><div class='docblock'><p>&#39;bTRC&#39;</p>
+</div><span id='variant.BToA0Tag' class='variant'><span id='BToA0Tag.v' class='invisible'><code>BToA0Tag</code></span></span><div class='docblock'><p>&#39;B2A0&#39;</p>
+</div><span id='variant.BToA1Tag' class='variant'><span id='BToA1Tag.v' class='invisible'><code>BToA1Tag</code></span></span><div class='docblock'><p>&#39;B2A1&#39;</p>
+</div><span id='variant.BToA2Tag' class='variant'><span id='BToA2Tag.v' class='invisible'><code>BToA2Tag</code></span></span><div class='docblock'><p>&#39;B2A2&#39;</p>
+</div><span id='variant.CalibrationDateTimeTag' class='variant'><span id='CalibrationDateTimeTag.v' class='invisible'><code>CalibrationDateTimeTag</code></span></span><div class='docblock'><p>&#39;calt&#39;</p>
+</div><span id='variant.CharTargetTag' class='variant'><span id='CharTargetTag.v' class='invisible'><code>CharTargetTag</code></span></span><div class='docblock'><p>&#39;targ&#39;</p>
+</div><span id='variant.ChromaticAdaptationTag' class='variant'><span id='ChromaticAdaptationTag.v' class='invisible'><code>ChromaticAdaptationTag</code></span></span><div class='docblock'><p>&#39;chad&#39;</p>
+</div><span id='variant.ChromaticityTag' class='variant'><span id='ChromaticityTag.v' class='invisible'><code>ChromaticityTag</code></span></span><div class='docblock'><p>&#39;chrm&#39;</p>
+</div><span id='variant.ColorantOrderTag' class='variant'><span id='ColorantOrderTag.v' class='invisible'><code>ColorantOrderTag</code></span></span><div class='docblock'><p>&#39;clro&#39;</p>
+</div><span id='variant.ColorantTableTag' class='variant'><span id='ColorantTableTag.v' class='invisible'><code>ColorantTableTag</code></span></span><div class='docblock'><p>&#39;clrt&#39;</p>
+</div><span id='variant.ColorantTableOutTag' class='variant'><span id='ColorantTableOutTag.v' class='invisible'><code>ColorantTableOutTag</code></span></span><div class='docblock'><p>&#39;clot&#39;</p>
+</div><span id='variant.ColorimetricIntentImageStateTag' class='variant'><span id='ColorimetricIntentImageStateTag.v' class='invisible'><code>ColorimetricIntentImageStateTag</code></span></span><div class='docblock'><p>&#39;ciis&#39;</p>
+</div><span id='variant.CopyrightTag' class='variant'><span id='CopyrightTag.v' class='invisible'><code>CopyrightTag</code></span></span><div class='docblock'><p>&#39;cprt&#39;</p>
+</div><span id='variant.CrdInfoTag' class='variant'><span id='CrdInfoTag.v' class='invisible'><code>CrdInfoTag</code></span></span><div class='docblock'><p>&#39;crdi&#39;</p>
+</div><span id='variant.DataTag' class='variant'><span id='DataTag.v' class='invisible'><code>DataTag</code></span></span><div class='docblock'><p>&#39;data&#39;</p>
+</div><span id='variant.DateTimeTag' class='variant'><span id='DateTimeTag.v' class='invisible'><code>DateTimeTag</code></span></span><div class='docblock'><p>&#39;dtim&#39;</p>
+</div><span id='variant.DeviceMfgDescTag' class='variant'><span id='DeviceMfgDescTag.v' class='invisible'><code>DeviceMfgDescTag</code></span></span><div class='docblock'><p>&#39;dmnd&#39;</p>
+</div><span id='variant.DeviceModelDescTag' class='variant'><span id='DeviceModelDescTag.v' class='invisible'><code>DeviceModelDescTag</code></span></span><div class='docblock'><p>&#39;dmdd&#39;</p>
+</div><span id='variant.DeviceSettingsTag' class='variant'><span id='DeviceSettingsTag.v' class='invisible'><code>DeviceSettingsTag</code></span></span><div class='docblock'><p>&#39;devs&#39;</p>
+</div><span id='variant.DToB0Tag' class='variant'><span id='DToB0Tag.v' class='invisible'><code>DToB0Tag</code></span></span><div class='docblock'><p>&#39;D2B0&#39;</p>
+</div><span id='variant.DToB1Tag' class='variant'><span id='DToB1Tag.v' class='invisible'><code>DToB1Tag</code></span></span><div class='docblock'><p>&#39;D2B1&#39;</p>
+</div><span id='variant.DToB2Tag' class='variant'><span id='DToB2Tag.v' class='invisible'><code>DToB2Tag</code></span></span><div class='docblock'><p>&#39;D2B2&#39;</p>
+</div><span id='variant.DToB3Tag' class='variant'><span id='DToB3Tag.v' class='invisible'><code>DToB3Tag</code></span></span><div class='docblock'><p>&#39;D2B3&#39;</p>
+</div><span id='variant.BToD0Tag' class='variant'><span id='BToD0Tag.v' class='invisible'><code>BToD0Tag</code></span></span><div class='docblock'><p>&#39;B2D0&#39;</p>
+</div><span id='variant.BToD1Tag' class='variant'><span id='BToD1Tag.v' class='invisible'><code>BToD1Tag</code></span></span><div class='docblock'><p>&#39;B2D1&#39;</p>
+</div><span id='variant.BToD2Tag' class='variant'><span id='BToD2Tag.v' class='invisible'><code>BToD2Tag</code></span></span><div class='docblock'><p>&#39;B2D2&#39;</p>
+</div><span id='variant.BToD3Tag' class='variant'><span id='BToD3Tag.v' class='invisible'><code>BToD3Tag</code></span></span><div class='docblock'><p>&#39;B2D3&#39;</p>
+</div><span id='variant.GamutTag' class='variant'><span id='GamutTag.v' class='invisible'><code>GamutTag</code></span></span><div class='docblock'><p>&#39;gamt&#39;</p>
+</div><span id='variant.GrayTRCTag' class='variant'><span id='GrayTRCTag.v' class='invisible'><code>GrayTRCTag</code></span></span><div class='docblock'><p>&#39;kTRC&#39;</p>
+</div><span id='variant.GreenColorantTag' class='variant'><span id='GreenColorantTag.v' class='invisible'><code>GreenColorantTag</code></span></span><div class='docblock'><p>&#39;gXYZ&#39;</p>
+</div><span id='variant.GreenTRCTag' class='variant'><span id='GreenTRCTag.v' class='invisible'><code>GreenTRCTag</code></span></span><div class='docblock'><p>&#39;gTRC&#39;</p>
+</div><span id='variant.LuminanceTag' class='variant'><span id='LuminanceTag.v' class='invisible'><code>LuminanceTag</code></span></span><div class='docblock'><p>&#39;lumi&#39;</p>
+</div><span id='variant.MeasurementTag' class='variant'><span id='MeasurementTag.v' class='invisible'><code>MeasurementTag</code></span></span><div class='docblock'><p>&#39;meas&#39;</p>
+</div><span id='variant.MediaBlackPointTag' class='variant'><span id='MediaBlackPointTag.v' class='invisible'><code>MediaBlackPointTag</code></span></span><div class='docblock'><p>&#39;bkpt&#39;</p>
+</div><span id='variant.MediaWhitePointTag' class='variant'><span id='MediaWhitePointTag.v' class='invisible'><code>MediaWhitePointTag</code></span></span><div class='docblock'><p>&#39;wtpt&#39;</p>
+</div><span id='variant.NamedColorTag' class='variant'><span id='NamedColorTag.v' class='invisible'><code>NamedColorTag</code></span></span><div class='docblock'><p>&#39;ncol&#39; // Deprecated by the ICC</p>
+</div><span id='variant.NamedColor2Tag' class='variant'><span id='NamedColor2Tag.v' class='invisible'><code>NamedColor2Tag</code></span></span><div class='docblock'><p>&#39;ncl2&#39;</p>
+</div><span id='variant.OutputResponseTag' class='variant'><span id='OutputResponseTag.v' class='invisible'><code>OutputResponseTag</code></span></span><div class='docblock'><p>&#39;resp&#39;</p>
+</div><span id='variant.PerceptualRenderingIntentGamutTag' class='variant'><span id='PerceptualRenderingIntentGamutTag.v' class='invisible'><code>PerceptualRenderingIntentGamutTag</code></span></span><div class='docblock'><p>&#39;rig0&#39;</p>
+</div><span id='variant.Preview0Tag' class='variant'><span id='Preview0Tag.v' class='invisible'><code>Preview0Tag</code></span></span><div class='docblock'><p>&#39;pre0&#39;</p>
+</div><span id='variant.Preview1Tag' class='variant'><span id='Preview1Tag.v' class='invisible'><code>Preview1Tag</code></span></span><div class='docblock'><p>&#39;pre1&#39;</p>
+</div><span id='variant.Preview2Tag' class='variant'><span id='Preview2Tag.v' class='invisible'><code>Preview2Tag</code></span></span><div class='docblock'><p>&#39;pre2&#39;</p>
+</div><span id='variant.ProfileDescriptionTag' class='variant'><span id='ProfileDescriptionTag.v' class='invisible'><code>ProfileDescriptionTag</code></span></span><div class='docblock'><p>&#39;desc&#39;</p>
+</div><span id='variant.ProfileDescriptionMLTag' class='variant'><span id='ProfileDescriptionMLTag.v' class='invisible'><code>ProfileDescriptionMLTag</code></span></span><div class='docblock'><p>&#39;dscm&#39;</p>
+</div><span id='variant.ProfileSequenceDescTag' class='variant'><span id='ProfileSequenceDescTag.v' class='invisible'><code>ProfileSequenceDescTag</code></span></span><div class='docblock'><p>&#39;pseq&#39;</p>
+</div><span id='variant.ProfileSequenceIdTag' class='variant'><span id='ProfileSequenceIdTag.v' class='invisible'><code>ProfileSequenceIdTag</code></span></span><div class='docblock'><p>&#39;psid&#39;</p>
+</div><span id='variant.Ps2CRD0Tag' class='variant'><span id='Ps2CRD0Tag.v' class='invisible'><code>Ps2CRD0Tag</code></span></span><div class='docblock'><p>&#39;psd0&#39;</p>
+</div><span id='variant.Ps2CRD1Tag' class='variant'><span id='Ps2CRD1Tag.v' class='invisible'><code>Ps2CRD1Tag</code></span></span><div class='docblock'><p>&#39;psd1&#39;</p>
+</div><span id='variant.Ps2CRD2Tag' class='variant'><span id='Ps2CRD2Tag.v' class='invisible'><code>Ps2CRD2Tag</code></span></span><div class='docblock'><p>&#39;psd2&#39;</p>
+</div><span id='variant.Ps2CRD3Tag' class='variant'><span id='Ps2CRD3Tag.v' class='invisible'><code>Ps2CRD3Tag</code></span></span><div class='docblock'><p>&#39;psd3&#39;</p>
+</div><span id='variant.Ps2CSATag' class='variant'><span id='Ps2CSATag.v' class='invisible'><code>Ps2CSATag</code></span></span><div class='docblock'><p>&#39;ps2s&#39;</p>
+</div><span id='variant.Ps2RenderingIntentTag' class='variant'><span id='Ps2RenderingIntentTag.v' class='invisible'><code>Ps2RenderingIntentTag</code></span></span><div class='docblock'><p>&#39;ps2i&#39;</p>
+</div><span id='variant.RedColorantTag' class='variant'><span id='RedColorantTag.v' class='invisible'><code>RedColorantTag</code></span></span><div class='docblock'><p>&#39;rXYZ&#39;</p>
+</div><span id='variant.RedTRCTag' class='variant'><span id='RedTRCTag.v' class='invisible'><code>RedTRCTag</code></span></span><div class='docblock'><p>&#39;rTRC&#39;</p>
+</div><span id='variant.SaturationRenderingIntentGamutTag' class='variant'><span id='SaturationRenderingIntentGamutTag.v' class='invisible'><code>SaturationRenderingIntentGamutTag</code></span></span><div class='docblock'><p>&#39;rig2&#39;</p>
+</div><span id='variant.ScreeningDescTag' class='variant'><span id='ScreeningDescTag.v' class='invisible'><code>ScreeningDescTag</code></span></span><div class='docblock'><p>&#39;scrd&#39;</p>
+</div><span id='variant.ScreeningTag' class='variant'><span id='ScreeningTag.v' class='invisible'><code>ScreeningTag</code></span></span><div class='docblock'><p>&#39;scrn&#39;</p>
+</div><span id='variant.TechnologyTag' class='variant'><span id='TechnologyTag.v' class='invisible'><code>TechnologyTag</code></span></span><div class='docblock'><p>&#39;tech&#39;</p>
+</div><span id='variant.UcrBgTag' class='variant'><span id='UcrBgTag.v' class='invisible'><code>UcrBgTag</code></span></span><div class='docblock'><p>&#39;bfd &#39;</p>
+</div><span id='variant.ViewingCondDescTag' class='variant'><span id='ViewingCondDescTag.v' class='invisible'><code>ViewingCondDescTag</code></span></span><div class='docblock'><p>&#39;vued&#39;</p>
+</div><span id='variant.ViewingConditionsTag' class='variant'><span id='ViewingConditionsTag.v' class='invisible'><code>ViewingConditionsTag</code></span></span><div class='docblock'><p>&#39;view&#39;</p>
+</div><span id='variant.VcgtTag' class='variant'><span id='VcgtTag.v' class='invisible'><code>VcgtTag</code></span></span><div class='docblock'><p>&#39;vcgt&#39;</p>
+</div><span id='variant.MetaTag' class='variant'><span id='MetaTag.v' class='invisible'><code>MetaTag</code></span></span><div class='docblock'><p>&#39;meta&#39;</p>
+</div><span id='variant.ArgyllArtsTag' class='variant'><span id='ArgyllArtsTag.v' class='invisible'><code>ArgyllArtsTag</code></span></span><div class='docblock'><p>&#39;arts&#39;</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagSignature.html" title="enum lcms2_sys::ffi::TagSignature">TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#143' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagSignature.html" title="enum lcms2_sys::ffi::TagSignature">TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#143' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../lcms2_sys/ffi/enum.TagSignature.html" title="enum lcms2_sys::ffi::TagSignature">TagSignature</a></code></span></h4>
 <div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
-</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
 <div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagSignature.html' title='lcms2_sys::ffi::TagSignature'>TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-211' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#97' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../lcms2_sys/ffi/enum.TagSignature.html' title='lcms2_sys::ffi::TagSignature'>TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-212' class='srclink' href='../../src/lcms2_sys/ffi.rs.html#99' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagSignature.html" title="enum lcms2_sys::ffi::TagSignature">TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#143' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../lcms2_sys/ffi/enum.TagSignature.html" title="enum lcms2_sys::ffi::TagSignature">TagSignature</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagSignature.html" title="enum lcms2_sys::ffi::TagSignature">TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#143' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagSignature.html" title="enum lcms2_sys::ffi::TagSignature">TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#143' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../lcms2_sys/ffi/enum.TagSignature.html" title="enum lcms2_sys::ffi::TagSignature">TagSignature</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/lcms2_sys/ffi.rs.html#145' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
 <div class='docblock'><p>Formats the value using the given formatter.</p>
 </div></div></section>
     <section id='search' class="content hidden"></section>
@@ -188,11 +264,8 @@
     <script>
         window.rootPath = "../../";
         window.currentCrate = "lcms2_sys";
-        window.playgroundUrl = "";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
-    
     <script defer src="../../search-index.js"></script>
 </body>
 </html>

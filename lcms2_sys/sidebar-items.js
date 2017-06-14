@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["ffi",""]]});
+initSidebarItems({"mod":[["ffi","Little Color Management System   Copyright (c) 1998-2014 Marti Maria Saguer"]]});

@@ -1,4 +1,5 @@
 (function() {var implementors = {};
+implementors["lcms2"] = [];
 implementors["libc"] = [];
 
             if (window.register_implementors) {
